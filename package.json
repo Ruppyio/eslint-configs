@@ -1,0 +1,49 @@
+{
+  "name": "eslint-configs",
+  "description": "Bootstrap Ruppy's eslint configs into the project 🚀",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "lerna:publish": "lerna publish",
+    "lint": "eslint --fix --color --cache .",
+    "prettify": "prettier --write .",
+    "preversion": "yarn prettify && yarn lint"
+  },
+  "keywords": [
+    "eslint",
+    "ruppy",
+    "config",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "author": "Ruppy.io (https://ruppy.io)",
+  "contributors": [
+    "Latipun <latifsulistyo.me@gmail.com> (https://ruppy.io)"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/Ruppyio/eslint-configs.git",
+  "bugs": "https://github.com/Ruppyio/eslint-configs/issues",
+  "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix-dry-run",
+      "prettier --write"
+    ],
+    "*.{json,md}": "prettier --write"
+  }
+}

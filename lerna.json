@@ -1,0 +1,27 @@
+{
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "create": {
+      "keywords": [
+        "eslint",
+        "ruppy",
+        "config",
+        "eslintconfig",
+        "eslint-config"
+      ],
+      "license": "MIT"
+    },
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "message": "chore(release): publish %s"
+    }
+  },
+  "version": "0.0.0"
+}
