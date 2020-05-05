@@ -4,13 +4,7 @@
   "useWorkspaces": true,
   "command": {
     "create": {
-      "keywords": [
-        "eslint",
-        "ruppy",
-        "config",
-        "eslintconfig",
-        "eslint-config"
-      ],
+      "keywords": "eslint, ruppy, config, eslintconfig, eslint-config",
       "license": "MIT"
     },
     "publish": {
