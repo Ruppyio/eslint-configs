@@ -17,5 +17,6 @@
       "message": "chore(release): publish %s"
     }
   },
+  "ignoreChanges": ["**/test/**", "**/*.md"],
   "version": "0.2.0"
 }
