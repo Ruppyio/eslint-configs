@@ -7,11 +7,12 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "jest": "jest --coverage",
     "lerna:publish": "lerna publish",
     "lint": "eslint --fix --color --cache .",
     "prettify": "prettier --write .",
-    "preversion": "yarn prettify && yarn lint",
-    "test": "jest --coverage"
+    "preversion": "yarn test",
+    "test": "yarn lint && yarn prettify && yarn jest"
   },
   "keywords": [
     "eslint",
