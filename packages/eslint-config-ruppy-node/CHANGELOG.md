@@ -5,10 +5,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.2.0](https://github.com/Ruppyio/eslint-configs/compare/v0.1.0...v0.2.0) (2020-05-09)
 
-**Note:** Version bump only for package eslint-config-ruppy-base
-
-# 0.1.0 (2020-05-06)
-
 ### Features
 
-- **ruppy-base:** add initial base configs 🐣 ([9fbd909](https://github.com/Ruppyio/eslint-configs/commit/9fbd909e46acfdac6b20ec849bf855085eac8d49))
+- **ruppy-node:** add initial node configs 🐥 ([a9a1867](https://github.com/Ruppyio/eslint-configs/commit/a9a18672c420793b80c89410c9452cde4d078bec))
