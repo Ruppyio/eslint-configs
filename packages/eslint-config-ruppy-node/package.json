@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-node",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Ruppy's eslint configs for NodeJS projects 🐥",
   "keywords": [
     "eslint",
