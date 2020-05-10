@@ -23,6 +23,8 @@
   "license": "MIT",
   "main": "index.js",
   "files": [
+    "rules/",
+    "common.js",
     "index.js"
   ],
   "repository": {
