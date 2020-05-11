@@ -7,7 +7,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **ruppy-node:** adjust rules on plugin-import ([79b9b68](https://github.com/Ruppyio/eslint-configs/commit/79b9b685f7e1f5ad9cad6357cfc304af9e2c7100)), closes [mysticatea/eslint-plugin-node/#225](https://github.com/mysticatea/eslint-plugin-node//issues/225)
+- **ruppy-node:** adjust rules on plugin-node ([79b9b68](https://github.com/Ruppyio/eslint-configs/commit/79b9b685f7e1f5ad9cad6357cfc304af9e2c7100)), closes [mysticatea/eslint-plugin-node#225](https://github.com/mysticatea/eslint-plugin-node/issues/225)
 
 # [0.3.0](https://github.com/Ruppyio/eslint-configs/compare/v0.2.0...v0.3.0) (2020-05-10)
 
