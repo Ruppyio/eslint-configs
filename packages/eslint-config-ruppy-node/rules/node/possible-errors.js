@@ -21,10 +21,10 @@ module.exports = {
     'node/no-extraneous-require': 'off',
 
     // disallow import declarations which import non-existence modules
-    'node/no-missing-import': 'error',
+    'node/no-missing-import': 'off',
 
     // disallow `require()` expressions which import non-existence modules
-    'node/no-missing-require': 'error',
+    'node/no-missing-require': 'off',
 
     // disallow `new` operators with calls to `require`
     'node/no-new-require': 'error',
@@ -39,10 +39,12 @@ module.exports = {
     'node/no-unpublished-bin': 'error',
 
     // disallow `import` declarations which import private modules
-    'node/no-unpublished-import': 'error',
+    /** @see https://github.com/mysticatea/eslint-plugin-node/issues/225 */
+    'node/no-unpublished-import': 'off',
 
     // disallow `require()` expressions which import private modules
-    'node/no-unpublished-require': 'error',
+    /** @see https://github.com/mysticatea/eslint-plugin-node/issues/225 */
+    'node/no-unpublished-require': 'off',
 
     // disallow unsupported ECMAScript built-ins on the specified version
     'node/no-unsupported-features/es-builtins': 'off',
