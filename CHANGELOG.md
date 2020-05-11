@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/Ruppyio/eslint-configs/compare/v0.3.0...v0.3.1) (2020-05-11)
+
+### Bug Fixes
+
+- **ruppy-node:** adjust rules on plugin-import ([79b9b68](https://github.com/Ruppyio/eslint-configs/commit/79b9b685f7e1f5ad9cad6357cfc304af9e2c7100)), closes [mysticatea/eslint-plugin-node/#225](https://github.com/mysticatea/eslint-plugin-node//issues/225)
+
 # [0.3.0](https://github.com/Ruppyio/eslint-configs/compare/v0.2.0...v0.3.0) (2020-05-10)
 
 ### Bug Fixes
