@@ -2918,15 +2918,15 @@ eslint-config-prettier@^6.11.0:
     get-stdin "^6.0.0"
 
 "eslint-config-ruppy-base@file:packages/eslint-config-ruppy-base":
-  version "0.2.0"
+  version "0.3.0"
   dependencies:
     confusing-browser-globals "^1.0.9"
     eslint-config-prettier "^6.11.0"
 
 "eslint-config-ruppy-node@file:packages/eslint-config-ruppy-node":
-  version "0.2.0"
+  version "0.3.1"
   dependencies:
-    eslint-config-ruppy-base "file:C:/Users/latif/AppData/Local/Yarn/Cache/v6/npm-eslint-config-ruppy-node-0.2.0-a8f65db2-8f84-452f-af3d-9ee963f236f7-1589115825916/node_modules/eslint-config-ruppy-base"
+    eslint-config-ruppy-base "file:packages/eslint-config-ruppy-base"
 
 eslint-find-rules@^3.4.0:
   version "3.5.0"
@@ -3018,9 +3018,9 @@ eslint-plugin-prettier@^3.1.3:
     prettier-linter-helpers "^1.0.0"
 
 eslint-plugin-react-hooks@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.0.tgz#81196b990043cde339e25c6662aeebe32ac52d01"
-  integrity sha512-YKBY+kilK5wrwIdQnCF395Ya6nDro3EAMoe+2xFkmyklyhF16fH83TrQOo9zbZIDxBsXFgBbywta/0JKRNFDkw==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.1.tgz#c90fbb8726e35aadff94c9613ebd5c4de375412b"
+  integrity sha512-toTyfu0gFyZD9Ru3QEeVwfeK8T0lf31bZaknmbFRSDbiJdrzHKNBOh2NIwlepLLpvnhwMWWNbq3t+x0VoyQ1iw==
 
 eslint-plugin-react@^7.19.0:
   version "7.19.0"
