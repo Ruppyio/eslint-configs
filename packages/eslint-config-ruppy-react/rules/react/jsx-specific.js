@@ -96,7 +96,15 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 'off',
 
     // Prevent JSX prop spreading
-    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-props-no-spreading': [
+      'error',
+      {
+        html: 'enforce',
+        custom: 'enforce',
+        explicitSpread: 'ignore',
+        exceptions: [],
+      },
+    ],
 
     // Enforce default props alphabetical sorting
     'react/jsx-sort-default-props': 'off',
