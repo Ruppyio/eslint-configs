@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Ruppyio/eslint-configs/compare/v0.3.1...v0.4.0) (2020-06-08)
+
+### Bug Fixes
+
+- add missing jsx extension for import ([da58744](https://github.com/Ruppyio/eslint-configs/commit/da58744ec1b5fe52344202d11b452ba080df82bb))
+
+### Features
+
+- set rules for `react/jsx-props-no-spreading` ([ec3b93c](https://github.com/Ruppyio/eslint-configs/commit/ec3b93c565bc56f21be22b67e3237a06b4c49e83))
+
 ## [0.3.1](https://github.com/Ruppyio/eslint-configs/compare/v0.3.0...v0.3.1) (2020-05-11)
 
 ### Bug Fixes
