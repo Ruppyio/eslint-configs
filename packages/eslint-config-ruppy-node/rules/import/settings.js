@@ -13,7 +13,7 @@ module.exports = {
     'import/core-modules': [],
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json', '.cjs', '.ts', '.tsx'],
+        extensions: ['.js', '.mjs', '.jsx', '.json', '.cjs', '.ts', '.tsx'],
       },
     },
   },
