@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Ruppyio/eslint-configs/compare/v0.4.2...v0.5.0) (2020-06-09)
+
+### Features
+
+- set react self-closing-comp ([1941d33](https://github.com/Ruppyio/eslint-configs/commit/1941d337aae58f6fc98b8c61d0d3fd93098ad73a))
+
 ## [0.4.2](https://github.com/Ruppyio/eslint-configs/compare/v0.4.1...v0.4.2) (2020-06-08)
 
 **Note:** Version bump only for package eslint-config-ruppy-react
