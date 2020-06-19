@@ -333,7 +333,7 @@ module.exports = {
     'no-multi-assign': ['error'],
 
     // disallow multiple empty lines
-    'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 0, maxEOF: 0 }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
 
     // disallow negated conditions
     'no-negated-condition': 'off',
