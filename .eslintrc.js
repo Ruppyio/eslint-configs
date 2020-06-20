@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   extends: ['./packages/eslint-config-ruppy-node/common'],
   env: {
