@@ -1,6 +1,6 @@
 'use strict';
 
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 const path = require('path');
 const getRuleFinder = require('eslint-find-rules');
 
@@ -13,21 +13,31 @@ function getDeprecated(configsFileName) {
   return deprecated;
 }
 
-function getReport(configsFileName, isCommonJs = false) {
-  const cli = new CLIEngine({
-    configFile: path.resolve(__dirname, '..', configsFileName),
-    envs: ['node', 'jest'],
+async function getReport(configsFileName, isCommonJs = false) {
+  const cli = new ESLint({
+    ignore: false,
     useEslintrc: false,
+    overrideConfigFile: path.resolve(__dirname, '..', configsFileName),
   });
 
-  const text =
-    "const foo = 'bar';\n// eslint-disable-next-line no-console\nconsole.log(foo);\n";
-  const textCommonJs =
-    "'use strict';\n\nconst foo = 'bar';\n// eslint-disable-next-line no-console\nconsole.log(foo);\n";
+  const files = [
+    'packages/eslint-config-ruppy-node/test/mocks/node-test-file.js',
+  ];
+  const commonFiles = [
+    'packages/eslint-config-ruppy-node/test/mocks/common-test-file.js',
+  ];
 
-  const report = cli.executeOnText(isCommonJs ? textCommonJs : text, 'test.js');
+  const report = await cli.lintFiles(isCommonJs ? commonFiles : files);
 
-  return report;
+  const formatter = await cli.loadFormatter('stylish');
+  const resultText = formatter.format(report);
+
+  if (resultText.match('problems')) {
+    // eslint-disable-next-line no-console
+    console.log(resultText);
+  }
+
+  return resultText;
 }
 
 beforeEach(() => {
@@ -38,10 +48,10 @@ beforeEach(() => {
  * Test Suite for `ruppy-node` configs
  */
 describe('ruppy-node', () => {
-  it('should have valid configurations', () => {
-    const report = getReport('index.js');
-    expect(report.errorCount).toBe(0);
-    expect(report.warningCount).toBe(0);
+  it('should have valid configurations', async () => {
+    const report = await getReport('index.js');
+    const problems = report.match('problems');
+    expect(problems).toEqual(null);
   });
 
   it('should not contain deprecated rules', () => {
@@ -54,10 +64,10 @@ describe('ruppy-node', () => {
  * Test Suite for `ruppy-node/common` configs
  */
 describe('ruppy-node/common', () => {
-  it('should have valid configurations', () => {
-    const report = getReport('common.js', true);
-    expect(report.errorCount).toBe(0);
-    expect(report.warningCount).toBe(0);
+  it('should have valid configurations', async () => {
+    const report = await getReport('common.js', true);
+    const problems = report.match('problems');
+    expect(problems).toEqual(null);
   });
 
   it('should not contain deprecated rules', () => {

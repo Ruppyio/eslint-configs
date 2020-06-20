@@ -1,6 +1,6 @@
 'use strict';
 
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 const path = require('path');
 const getRuleFinder = require('eslint-find-rules');
 
@@ -13,16 +13,26 @@ function getDeprecated(configsFileName) {
   return deprecated;
 }
 
-function getReport(configsFileName) {
-  const cli = new CLIEngine({
-    configFile: path.resolve(__dirname, '..', configsFileName),
-    envs: ['node', 'jest'],
+async function getReport(configsFileName) {
+  const cli = new ESLint({
+    ignore: false,
     useEslintrc: false,
+    overrideConfigFile: path.resolve(__dirname, '..', configsFileName),
   });
 
-  const report = cli.executeOnFiles(['**/react-test-file.jsx']);
+  const report = await cli.lintFiles([
+    'packages/eslint-config-ruppy-react/test/mocks/react-test-file.jsx',
+  ]);
 
-  return report;
+  const formatter = await cli.loadFormatter('stylish');
+  const resultText = formatter.format(report);
+
+  if (resultText.match('problems')) {
+    // eslint-disable-next-line no-console
+    console.log(resultText);
+  }
+
+  return resultText;
 }
 
 beforeEach(() => {
@@ -33,10 +43,10 @@ beforeEach(() => {
  * Test Suite for `ruppy-react` configs
  */
 describe('ruppy-react', () => {
-  it('should have valid configurations', () => {
-    const report = getReport('index.js');
-    expect(report.errorCount).toBe(0);
-    expect(report.warningCount).toBe(0);
+  it('should have valid configurations', async () => {
+    const report = await getReport('index.js');
+    const problems = report.match('problems');
+    expect(problems).toEqual(null);
   });
 
   it('should not contain deprecated rules', () => {
