@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Ruppyio/eslint-configs/compare/v0.5.1...v0.6.0) (2020-06-20)
+
+### Bug Fixes
+
+- **ruppy-base:** add 'context' exception for `no-param-reassign` ([a65fff7](https://github.com/Ruppyio/eslint-configs/commit/a65fff7dd01e3678d908030d0652c69fc70aafa8))
+- **ruppy-base:** disallow multiple empty lines ([5da07f8](https://github.com/Ruppyio/eslint-configs/commit/5da07f88a2d044239b8b5ee3e2e1a8969999e4c6))
+
+### Features
+
+- **configs:** upgrade to eslint 7 ✨ ([d4257dc](https://github.com/Ruppyio/eslint-configs/commit/d4257dccaca3ba704dfaa1614ab3d485b8837882))
+
 ## [0.5.1](https://github.com/Ruppyio/eslint-configs/compare/v0.5.0...v0.5.1) (2020-06-09)
 
 **Note:** Version bump only for package eslint-config-ruppy-base
