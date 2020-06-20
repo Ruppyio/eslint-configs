@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/Ruppyio/eslint-configs/compare/v0.6.0...v0.6.1) (2020-06-20)
+
+**Note:** Version bump only for package eslint-config-ruppy-react
+
 # [0.6.0](https://github.com/Ruppyio/eslint-configs/compare/v0.5.1...v0.6.0) (2020-06-20)
 
 ### Features
