@@ -36,7 +36,7 @@ module.exports = {
     'import/no-self-import': 'error',
 
     // Forbid a module from importing a module with a dependency path back to itself
-    'import/no-cycle': 'error',
+    'import/no-cycle': ['error', { maxDepth: Number.MAX_SAFE_INTEGER }],
 
     // Prevent unnecessary path segments in import and require statements
     'import/no-useless-path-segments': ['error', { commonjs: true }],
