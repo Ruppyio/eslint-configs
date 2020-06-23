@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/Ruppyio/eslint-configs/compare/v0.6.1...v0.6.2) (2020-06-23)
+
+### Bug Fixes
+
+- add back `maxDepth` on `import/no-cycle` ([7b00452](https://github.com/Ruppyio/eslint-configs/commit/7b004522b6730235542a2e4ff4f5b565601a1fb9))
+
 ## [0.6.1](https://github.com/Ruppyio/eslint-configs/compare/v0.6.0...v0.6.1) (2020-06-20)
 
 ### Bug Fixes
