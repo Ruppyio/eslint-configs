@@ -92,11 +92,17 @@ module.exports = {
     // disallow irregular whitespace
     'no-irregular-whitespace': 'error',
 
+    // disallow literal numbers that lose precision
+    'no-loss-of-precision': 'off',
+
     // disallow characters which are made with multiple code points in character class syntax
     'no-misleading-character-class': 'error',
 
     // disallow calling global object properties as functions
     'no-obj-calls': 'error',
+
+    // disallow returning values from Promise executor functions
+    'no-promise-executor-return': 'off',
 
     // disallow calling some `Object.prototype` methods directly on objects
     'no-prototype-builtins': 'error',
@@ -119,6 +125,9 @@ module.exports = {
 
     // disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
     'no-unreachable': 'error',
+
+    // disallow loops with a body that allows only one iteration
+    'no-unreachable-loop': 'off',
 
     // disallow control flow statements in `finally` blocks
     'no-unsafe-finally': 'error',
