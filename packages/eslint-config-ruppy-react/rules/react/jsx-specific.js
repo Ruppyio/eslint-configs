@@ -6,7 +6,7 @@
 module.exports = {
   rules: {
     // Enforce boolean attributes notation in JSX (fixable)
-    'react/jsx-boolean-value': 'off',
+    'react/jsx-boolean-value': ['error', 'never', { always: [] }],
 
     // Ensures inline tags are not rendered without spaces between them
     'react/jsx-child-element-spacing': 'off',
@@ -18,7 +18,10 @@ module.exports = {
     'react/jsx-closing-tag-location': 'off',
 
     // Disallow unnecessary JSX expressions when literals alone are sufficient or enforce JSX expressions on literals in JSX children or attributes (fixable)
-    'react/jsx-curly-brace-presence': 'off',
+    'react/jsx-curly-brace-presence': [
+      'error',
+      { props: 'never', children: 'never' },
+    ],
 
     // Enforce consistent line breaks inside jsx curly (fixable)
     'react/jsx-curly-newline': 'off',
@@ -30,13 +33,13 @@ module.exports = {
     'react/jsx-equals-spacing': 'off',
 
     // Restrict file extensions that may contain JSX
-    'react/jsx-filename-extension': 'off',
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
 
     // Ensure proper position of the first property in JSX (fixable)
     'react/jsx-first-prop-new-line': 'off',
 
     // Enforce shorthand or standard form for React fragments (fixable)
-    'react/jsx-fragments': 'off',
+    'react/jsx-fragments': ['error', 'syntax'],
 
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 'off',
@@ -97,7 +100,7 @@ module.exports = {
 
     // Prevent JSX prop spreading
     'react/jsx-props-no-spreading': [
-      'error',
+      'warn',
       {
         html: 'enforce',
         custom: 'enforce',

@@ -15,7 +15,7 @@ module.exports = {
     'react/default-props-match-prop-types': 'off',
 
     // Enforce consistent usage of destructuring assignment of props, state, and context
-    'react/destructuring-assignment': 'off',
+    'react/destructuring-assignment': ['error', 'always'],
 
     // Prevent missing displayName in a React component definition
     'react/display-name': 'error',
@@ -39,13 +39,13 @@ module.exports = {
     'react/function-component-definition': 'off',
 
     // Reports when this.state is accessed within setState
-    'react/no-access-state-in-setstate': 'off',
+    'react/no-access-state-in-setstate': 'error',
 
     // Prevent adjacent inline elements not separated by whitespace.
     'react/no-adjacent-inline-elements': 'off',
 
     // Prevent usage of Array index in keys
-    'react/no-array-index-key': 'off',
+    'react/no-array-index-key': 'error',
 
     // Prevent passing of children as props.
     'react/no-children-prop': 'error',
@@ -63,7 +63,7 @@ module.exports = {
     'react/no-did-mount-set-state': 'off',
 
     // Prevent usage of setState in componentDidUpdate
-    'react/no-did-update-set-state': 'off',
+    'react/no-did-update-set-state': 'error',
 
     // Prevent direct mutation of this.state
     'react/no-direct-mutation-state': 'error',
@@ -78,7 +78,7 @@ module.exports = {
     'react/no-multi-comp': 'off',
 
     // Flag shouldComponentUpdate when extending PureComponent
-    'react/no-redundant-should-component-update': 'off',
+    'react/no-redundant-should-component-update': 'error',
 
     // Prevent usage of the return value of React.render
     'react/no-render-return-value': 'error',
@@ -90,7 +90,7 @@ module.exports = {
     'react/no-string-refs': 'error',
 
     // Report "this" being used in stateless components
-    'react/no-this-in-sfc': 'off',
+    'react/no-this-in-sfc': 'error',
 
     // Prevent common typos
     'react/no-typos': 'error',
@@ -108,19 +108,22 @@ module.exports = {
     'react/no-unused-prop-types': 'off',
 
     // Prevent definition of unused state fields
-    'react/no-unused-state': 'off',
+    'react/no-unused-state': 'error',
 
     // Prevent usage of setState in componentWillUpdate
-    'react/no-will-update-set-state': 'off',
+    'react/no-will-update-set-state': 'error',
 
     // Enforce ES5 or ES6 class for React Components
-    'react/prefer-es6-class': 'off',
+    'react/prefer-es6-class': ['error', 'always'],
 
     // Require read-only props. (fixable)
     'react/prefer-read-only-props': 'off',
 
     // Enforce stateless components to be written as a pure function
-    'react/prefer-stateless-function': 'off',
+    'react/prefer-stateless-function': [
+      'error',
+      { ignorePureComponents: true },
+    ],
 
     // Prevent missing props validation in a React component definition
     'react/prop-types': 'error',
@@ -129,7 +132,12 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
 
     // Enforce a defaultProps definition for every prop that is not a required prop.
-    'react/require-default-props': 'off',
+    'react/require-default-props': [
+      'error',
+      {
+        forbidDefaultForRequired: true,
+      },
+    ],
 
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 'off',
@@ -141,8 +149,54 @@ module.exports = {
     'react/self-closing-comp': 'error',
 
     // Enforce component methods order
-    'react/sort-comp': 'off',
-
+    'react/sort-comp': [
+      'warn',
+      {
+        order: [
+          'static-variables',
+          'static-methods',
+          'instance-variables',
+          'lifecycle',
+          '/^on.+$/',
+          'getters',
+          'setters',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'instance-methods',
+          'everything-else',
+          'rendering',
+        ],
+        groups: {
+          lifecycle: [
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'mixins',
+            'statics',
+            'defaultProps',
+            'constructor',
+            'getDefaultProps',
+            'getInitialState',
+            'state',
+            'getChildContext',
+            'getDerivedStateFromProps',
+            'componentWillMount',
+            'UNSAFE_componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'UNSAFE_componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'UNSAFE_componentWillUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount',
+          ],
+          rendering: ['/^render.+$/', 'render'],
+        },
+      },
+    ],
     // Enforce propTypes declarations alphabetical sorting
     'react/sort-prop-types': 'off',
 
@@ -156,6 +210,6 @@ module.exports = {
     'react/style-prop-object': 'warn',
 
     // Prevent passing of children to void DOM elements (e.g. <br />).
-    'react/void-dom-elements-no-children': 'off',
+    'react/void-dom-elements-no-children': 'error',
   },
 };

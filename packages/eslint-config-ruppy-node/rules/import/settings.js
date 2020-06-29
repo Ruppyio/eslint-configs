@@ -8,7 +8,7 @@ module.exports = {
     'import/extensions': ['.js', '.mjs', '.jsx', '.cjs', '.ts', '.tsx'],
     'import/ignore': [
       'node_modules',
-      '\\.(coffee|sass|scss|css|less|hbs|svg|json)$',
+      '\\.(coffee|sass|scss|css|less|hbs|svg|jpg|png|json)$',
     ],
     'import/core-modules': [],
     'import/resolver': {
