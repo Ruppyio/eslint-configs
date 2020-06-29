@@ -2934,15 +2934,15 @@ eslint-config-prettier@^6.11.0:
     get-stdin "^6.0.0"
 
 "eslint-config-ruppy-base@file:packages/eslint-config-ruppy-base":
-  version "0.6.0"
+  version "1.0.0"
   dependencies:
     confusing-browser-globals "^1.0.9"
     eslint-config-prettier "^6.11.0"
 
 "eslint-config-ruppy-node@file:packages/eslint-config-ruppy-node":
-  version "0.6.2"
+  version "1.0.0"
   dependencies:
-    eslint-config-ruppy-base "file:../../.cache/yarn/v6/npm-eslint-config-ruppy-node-0.6.2-261bc138-57e1-4571-94e3-10d29beecd95-1593384739376/node_modules/eslint-config-ruppy-base"
+    eslint-config-ruppy-base "file:../../.cache/yarn/v6/npm-eslint-config-ruppy-node-1.0.0-619d994b-4818-4601-8a11-1c72045b0ef9-1593395529283/node_modules/eslint-config-ruppy-base"
 
 eslint-find-rules@^3.4.0:
   version "3.5.0"
@@ -3083,7 +3083,7 @@ eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.2.0.tgz#74415ac884874495f78ec2a97349525344c981fa"
   integrity sha512-WFb4ihckKil6hu3Dp798xdzSfddwKKU3+nGniKF6HfeW6OLd2OUDEPP7TcHtB5+QXOKg2s6B2DaMPE1Nn/kxKQ==
 
-eslint@^7.2.0:
+eslint@^7.3.0:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
   integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==

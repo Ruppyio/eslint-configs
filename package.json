@@ -8,7 +8,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "jest": "jest --coverage",
-    "lerna:publish": "lerna publish",
+    "lerna:publish": "yarn bootstrap && lerna publish",
     "lint": "eslint --fix --color --cache .",
     "prettify": "prettier --write .",
     "preversion": "yarn test",
