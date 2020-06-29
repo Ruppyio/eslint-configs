@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/Ruppyio/eslint-configs/compare/v0.6.2...v1.0.0) (2020-06-29)
+
+### Bug Fixes
+
+- **deps:** update deps and fix `import/no-cycle` infinity ([8570ad1](https://github.com/Ruppyio/eslint-configs/commit/8570ad1b5e58ce5cb528f96f43f7dc193e2decf7))
+
+### Features
+
+- **configs:** enable lot of rules ✨ ([1ac1f1b](https://github.com/Ruppyio/eslint-configs/commit/1ac1f1b69b39da942bb8758a42359e1a10ae852a))
+
+### BREAKING CHANGES
+
+- **configs:** this rules now close to airbnb/javascript rules
+
 ## [0.6.2](https://github.com/Ruppyio/eslint-configs/compare/v0.6.1...v0.6.2) (2020-06-23)
 
 **Note:** Version bump only for package eslint-config-ruppy-react

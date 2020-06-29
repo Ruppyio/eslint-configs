@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/Ruppyio/eslint-configs/compare/v0.6.2...v1.0.0) (2020-06-29)
+
+### Bug Fixes
+
+- **deps:** update deps and fix `import/no-cycle` infinity ([8570ad1](https://github.com/Ruppyio/eslint-configs/commit/8570ad1b5e58ce5cb528f96f43f7dc193e2decf7))
+
 # [0.6.0](https://github.com/Ruppyio/eslint-configs/compare/v0.5.1...v0.6.0) (2020-06-20)
 
 ### Bug Fixes
