@@ -14,9 +14,9 @@
       "allowBranch": "master",
       "conventionalCommits": true,
       "createRelease": "github",
-      "message": "chore(release): publish %s"
+      "message": "chore(release): publish new release 🚀"
     }
   },
   "ignoreChanges": ["**/test/**", "**/*.md"],
-  "version": "1.0.0"
+  "version": "independent"
 }
