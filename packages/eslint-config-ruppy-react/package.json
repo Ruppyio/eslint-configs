@@ -44,7 +44,7 @@
     "eslint-config-ruppy-node": "file:../eslint-config-ruppy-node"
   },
   "peerDependencies": {
-    "eslint": "^7.3.0",
+    "eslint": "^7.5.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-node": "^11.1.0",

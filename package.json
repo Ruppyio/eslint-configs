@@ -30,7 +30,7 @@
   "bugs": "https://github.com/Ruppyio/eslint-configs/issues",
   "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
   "devDependencies": {
-    "eslint": "^7.3.0",
+    "eslint": "^7.5.0",
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",

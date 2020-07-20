@@ -112,7 +112,7 @@ module.exports = {
     'function-paren-newline': ['error', 'consistent'],
 
     // disallow specified identifiers
-    'id-blacklist': 'off',
+    'id-denylist': 'off',
 
     // enforce minimum and maximum identifier lengths
     'id-length': 'off',
