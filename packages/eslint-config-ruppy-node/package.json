@@ -38,7 +38,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-ruppy-base": "file:../eslint-config-ruppy-base"
+    "eslint-config-ruppy-base": "^1.1.1"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",
