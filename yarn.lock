@@ -2933,17 +2933,6 @@ eslint-config-prettier@^6.11.0:
   dependencies:
     get-stdin "^6.0.0"
 
-"eslint-config-ruppy-base@file:packages/eslint-config-ruppy-base":
-  version "1.0.0"
-  dependencies:
-    confusing-browser-globals "^1.0.9"
-    eslint-config-prettier "^6.11.0"
-
-"eslint-config-ruppy-node@file:packages/eslint-config-ruppy-node":
-  version "1.0.0"
-  dependencies:
-    eslint-config-ruppy-base "file:../../.cache/yarn/v6/npm-eslint-config-ruppy-node-1.0.0-5d81bbf7-7fc8-4634-9eb7-3ecbaa9883ee-1595205667626/node_modules/eslint-config-ruppy-base"
-
 eslint-find-rules@^3.4.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-3.6.0.tgz#e7fb38ce94df2d9d088a0b7fe2ececa2ee86abd0"

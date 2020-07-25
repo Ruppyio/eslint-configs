@@ -40,8 +40,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-ruppy-base": "file:../eslint-config-ruppy-base",
-    "eslint-config-ruppy-node": "file:../eslint-config-ruppy-node"
+    "eslint-config-ruppy-base": "^1.1.1",
+    "eslint-config-ruppy-node": "^1.1.1"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",
