@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.1...eslint-config-ruppy-base@1.1.2) (2020-07-25)
+
+### Bug Fixes
+
+- **ruppy-base:** remove `self` from restricted globals ([bb884e9](https://github.com/Ruppyio/eslint-configs/commit/bb884e98ac44ae3ed3b8aa8a15ed0f0c10b8b7a8)), closes [airbnb/javascript#1632](https://github.com/airbnb/javascript/issues/1632)
+
 ## [1.1.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.0...eslint-config-ruppy-base@1.1.1) (2020-07-20)
 
 **Note:** Version bump only for package eslint-config-ruppy-base

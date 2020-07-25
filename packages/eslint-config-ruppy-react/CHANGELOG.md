@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.1.1...eslint-config-ruppy-react@1.1.2) (2020-07-25)
+
+### Bug Fixes
+
+- **ruppy-react:** independent dependencies ([a4d359a](https://github.com/Ruppyio/eslint-configs/commit/a4d359a12345013627f0ba631f2750c6fde72f2b))
+
 ## [1.1.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.1.0...eslint-config-ruppy-react@1.1.1) (2020-07-20)
 
 **Note:** Version bump only for package eslint-config-ruppy-react
