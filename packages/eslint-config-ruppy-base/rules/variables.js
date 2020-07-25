@@ -2,6 +2,9 @@
 
 const confusingBrowserGlobals = require('confusing-browser-globals');
 
+const globals = ['error', 'isFinite', 'isNaN'].concat(confusingBrowserGlobals);
+const restrictedGlobals = globals.filter((item) => item !== 'self');
+
 /**
  * @see https://eslint.org/docs/rules/#variables
  */
@@ -17,9 +20,7 @@ module.exports = {
     'no-label-var': 'error',
 
     // disallow specified global variables
-    'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(
-      confusingBrowserGlobals
-    ),
+    'no-restricted-globals': restrictedGlobals,
 
     // disallow variable declarations from shadowing variables declared in the outer scope
     'no-shadow': 'error',
