@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.3...eslint-config-ruppy-base@1.1.4) (2020-08-01)
+
+### Bug Fixes
+
+- **ruppy-base:** add dangle for workbox plugin ([07a841a](https://github.com/Ruppyio/eslint-configs/commit/07a841a743c32b49694e20826adf6e961c0f8217))
+
 ## [1.1.3](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.2...eslint-config-ruppy-base@1.1.3) (2020-08-01)
 
 ### Bug Fixes
