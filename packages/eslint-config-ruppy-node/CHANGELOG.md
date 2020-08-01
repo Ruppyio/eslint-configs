@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.4...eslint-config-ruppy-node@1.1.5) (2020-08-01)
+
+### Bug Fixes
+
+- **ruppy-node:** add files for allowed devDeps module ([7ff5d61](https://github.com/Ruppyio/eslint-configs/commit/7ff5d6107de614206eb8ab4f288da2fe29953f96))
+
 ## [1.1.4](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.3...eslint-config-ruppy-node@1.1.4) (2020-08-01)
 
 **Note:** Version bump only for package eslint-config-ruppy-node
