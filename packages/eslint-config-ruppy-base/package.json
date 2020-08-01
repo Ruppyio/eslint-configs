@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-base",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Ruppy's base eslint configurations 🐣",
   "keywords": [
     "eslint",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.2...eslint-config-ruppy-base@1.1.3) (2020-08-01)
+
+### Bug Fixes
+
+- **ruppy-base:** allow dangle for workbox webpack plugin variables ([c0fbb6e](https://github.com/Ruppyio/eslint-configs/commit/c0fbb6eb07b0ffcf20bc5617722631aea72dc7ac))
+
 ## [1.1.2](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.1.1...eslint-config-ruppy-base@1.1.2) (2020-07-25)
 
 ### Bug Fixes
