@@ -386,7 +386,7 @@ module.exports = {
     'no-underscore-dangle': [
       'error',
       {
-        allow: ['__precacheManifest'],
+        allow: ['__precacheManifest', '__WB_MANIFEST'],
         allowAfterThis: false,
         allowAfterSuper: false,
         enforceInMethodNames: true,
