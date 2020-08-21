@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-react",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Ruppy's eslint configs for React.js projects ⚛🐤",
   "keywords": [
     "eslint",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "eslint-config-ruppy-base": "^1.1.4",
-    "eslint-config-ruppy-node": "^1.1.5"
+    "eslint-config-ruppy-node": "^1.1.6"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",

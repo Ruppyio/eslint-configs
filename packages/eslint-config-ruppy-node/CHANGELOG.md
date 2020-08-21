@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.5...eslint-config-ruppy-node@1.1.6) (2020-08-21)
+
+### Bug Fixes
+
+- **ruppy-node:** allow ts declaration import extension ([56b2457](https://github.com/Ruppyio/eslint-configs/commit/56b245779d62ba2bd47d70812a69adf7f6e4780d))
+
 ## [1.1.5](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.4...eslint-config-ruppy-node@1.1.5) (2020-08-01)
 
 ### Bug Fixes
