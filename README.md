@@ -10,8 +10,4 @@
 
 We would love for your contributions of any kind. See our [contributing guide](CONTRIBUTING.md).
 
-## Latest Improvement
-
-See our [changelog](CHANGELOG.md) for our latest improvements.
-
 ## Hacking to the Gate~! 🎶

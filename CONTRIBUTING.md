@@ -22,8 +22,8 @@ help it make it even better than today. We welcome you [with arms wide open~! ğŸ
    git remote add upstream https://github.com/Ruppyio/eslint-configs.git
 
    # do this whenever you want to sync with original repository
-   git checkout master
-   git fetch upstream && git rebase upstream/master
+   git checkout main
+   git fetch upstream && git rebase upstream/main
    ```
 
    > This will add the original repository as a remote called `upstream` while remote to your forked repo is usually called `origin` when you clone it by default.
@@ -33,7 +33,7 @@ help it make it even better than today. We welcome you [with arms wide open~! ğŸ
    > If you want to push the synced local to your forked repo, do this command:
    >
    > ```bin
-   > git push origin master
+   > git push origin main
    > ```
 
 3. Install dependencies using `yarn`.

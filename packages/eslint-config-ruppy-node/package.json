@@ -19,7 +19,7 @@
   "contributors": [
     "Latipun <latifsulistyo.me@gmail.com> (https://ruppy.io)"
   ],
-  "homepage": "https://github.com/Ruppyio/eslint-configs/tree/master/packages/eslint-config-ruppy-node#readme",
+  "homepage": "https://github.com/Ruppyio/eslint-configs/tree/main/packages/eslint-config-ruppy-node#readme",
   "license": "MIT",
   "main": "index.js",
   "files": [
