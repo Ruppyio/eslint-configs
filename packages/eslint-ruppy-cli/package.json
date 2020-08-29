@@ -1,0 +1,47 @@
+{
+  "name": "eslint-ruppy",
+  "version": "1.0.0",
+  "description": "Bootstrap eslint configs (+ prettier configs) into projects 🐣",
+  "keywords": [
+    "eslint",
+    "ruppy",
+    "config",
+    "eslintconfig",
+    "eslint-config",
+    "prettier",
+    "prettier-config",
+    "prettierconfig",
+    "cli"
+  ],
+  "author": "LS <latifsulistyo.me@gmail.com> (https://ruppy.io)",
+  "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
+  "license": "MIT",
+  "main": "lib/eslint-ruppy-cli.js",
+  "bin": {
+    "eslint-ruppy": "bin/eslint-ruppy"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruppyio/eslint-configs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Ruppyio/eslint-configs/issues"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "inquirer": "^7.3.3",
+    "prettier": "^2.1.1",
+    "yargs": "^15.4.1"
+  }
+}
