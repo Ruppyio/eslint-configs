@@ -1,7 +1,7 @@
 'use strict';
 
 const factory = require('yargs/yargs');
-const eslintRuppyCli = require('./eslint-ruppy-cli');
+const { eslintRuppyCli } = require('./eslint-ruppy-cli');
 
 function cli(cwd) {
   const parser = factory(null, cwd);
