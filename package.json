@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "jest": "jest --coverage",
+    "jest": "jest",
     "lerna:publish": "yarn bootstrap && lerna publish",
     "lint": "eslint --fix --color --cache .",
     "prettify": "prettier --write .",
@@ -42,6 +42,7 @@
     "jest": "^26.4.1",
     "lerna": "^3.20.2",
     "lint-staged": "^10.2.2",
+    "mock-stdin": "^1.0.0",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1"

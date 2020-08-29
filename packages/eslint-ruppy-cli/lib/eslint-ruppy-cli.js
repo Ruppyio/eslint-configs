@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const spawn = require('cross-spawn');
 const { format } = require('prettier');
 const { join } = require('path');
-const { copyFile, writeFile } = require('fs/promises');
+const { copyFile, writeFile } = require('fs').promises;
 const {
   constants: { COPYFILE_EXCL },
 } = require('fs');
@@ -241,4 +241,4 @@ async function eslintRuppyCli() {
   installPackages(answer, modules);
 }
 
-module.exports = eslintRuppyCli;
+module.exports = { askQuestions, eslintRuppyCli };
