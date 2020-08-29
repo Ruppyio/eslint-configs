@@ -162,6 +162,7 @@ function eslintConfigs(answer) {
 
   if (answer.typescript) {
     eslintConfig.extends.push('plugin:@typescript-eslint/recommended');
+    modules.push('eslint-import-resolver-typescript');
     modules.push('@typescript-eslint/eslint-plugin');
     modules.push('@typescript-eslint/parser');
     modules.push('typescript');
