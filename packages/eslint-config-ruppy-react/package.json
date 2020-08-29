@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-react",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "Ruppy's eslint configs for React.js projects ⚛🐤",
   "keywords": [
     "eslint",
@@ -40,8 +40,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-ruppy-base": "^1.1.4",
-    "eslint-config-ruppy-node": "^1.1.6"
+    "eslint-config-ruppy-base": "^1.2.0",
+    "eslint-config-ruppy-node": "^1.2.0"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",

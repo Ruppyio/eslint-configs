@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.6...eslint-config-ruppy-node@1.2.0) (2020-08-29)
+
+### Features
+
+- change default branch to `main` ❤ ([05100d3](https://github.com/Ruppyio/eslint-configs/commit/05100d36b893a8d3cd43d00740b1dd54c5c6fbcd))
+
 ## [1.1.6](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.1.5...eslint-config-ruppy-node@1.1.6) (2020-08-21)
 
 ### Bug Fixes
