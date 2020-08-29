@@ -20,6 +20,14 @@ It enforce linting for react and JSX.
 
 ## Usage
 
+- The easiest way to add this configs into project is running this commands in your root project:
+
+  ```bin
+  npx eslint-ruppy -i
+  ```
+
+  **OR** follow along these steps below:
+
 - Install this configs and its peer dependencies.
 
   ```bin
