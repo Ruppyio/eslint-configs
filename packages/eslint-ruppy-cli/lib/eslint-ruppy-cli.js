@@ -48,8 +48,8 @@ async function askQuestions() {
         name: 'env',
         message: 'What syntax do you write?',
         choices: [
-          { value: 'es6', name: 'ES2015++' },
-          { value: 'es5', name: 'legacy codes' },
+          { value: 'es6', name: 'ES2015+ syntax' },
+          { value: 'es5', name: 'legacy JS syntax' },
         ],
         default: 0,
       },
@@ -105,23 +105,16 @@ function fetchPeerDependencies(packageName) {
 function eslintConfigs(answer) {
   const eslintConfig = {
     extends: [],
-    env: {
-      node: true,
-      browser: true,
-      jest: true,
-    },
+    env: {},
   };
 
   const typescriptConfig = {
     parserOptions: {
       parser: '@typescript-eslint/parser',
-      ecmaVersion: 2020,
       sourceType: 'module',
     },
     plugins: ['@typescript-eslint'],
-    settings: {
-      'import/resolver': { typescript: {} },
-    },
+    settings: { 'import/resolver': { typescript: {} } },
     rules: {
       '@typescript-eslint/no-empty-interface': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',

@@ -14,12 +14,7 @@ module.exports = {
     './rules/node/stylistic-issues',
     'ruppy-base',
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-  },
-  plugins: ['import', 'node', 'prettier'],
-  env: {
-    node: true,
-  },
+  env: { node: true, es2020: true, es2021: true },
+  parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
+  plugins: ['import', 'node'],
 };

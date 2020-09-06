@@ -16,7 +16,8 @@ This eslint configurations has two exported configs.
 ### `ruppy-base`
 
 This is the default configs. It contains all [eslint rules][eslint-rules] without
-deprecated and removed rules. It support for linting ES6+ javascript **without ESModule**.
+deprecated and removed rules. It support for linting ES2015/ES6 - ES2017 javascript
+syntax **without ESModules** by default.
 
 ### `ruppy-base/legacy`
 
@@ -30,7 +31,9 @@ This configs support for linting legacy javascript language (ES5 and below).
   npx eslint-ruppy -i
   ```
 
-  **OR** follow along these steps below:
+---
+
+**OR** follow along these steps below:
 
 - Install this configs and its peer dependencies.
 

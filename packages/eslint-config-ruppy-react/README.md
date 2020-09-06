@@ -15,7 +15,8 @@ for linting javascript code styles with prettier.
 ### `ruppy-react`
 
 This is the default configs. It contains all [eslint rules][eslint-rules] without
-deprecated and removed rules. It support for linting ES6+ javascript.
+deprecated and removed rules. It support for linting ES2015/ES6 - ESNext javascript
+syntax with **assumption you have polyfill for ESNext** syntax.
 It enforce linting for react and JSX.
 
 ## Usage
@@ -26,7 +27,9 @@ It enforce linting for react and JSX.
   npx eslint-ruppy -i
   ```
 
-  **OR** follow along these steps below:
+---
+
+**OR** follow along these steps below:
 
 - Install this configs and its peer dependencies.
 
