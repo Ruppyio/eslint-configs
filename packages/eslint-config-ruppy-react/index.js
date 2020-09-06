@@ -14,15 +14,10 @@ module.exports = {
     'ruppy-node',
     'prettier/react',
   ],
+  env: { browser: true },
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-  plugins: ['react', 'react-hooks', 'jsx-a11y', 'node', 'import', 'prettier'],
-  env: {
-    node: true,
-    browser: true,
+    ecmaFeatures: { jsx: true },
   },
   rules: {
     'class-methods-use-this': [

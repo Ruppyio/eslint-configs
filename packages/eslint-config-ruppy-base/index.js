@@ -11,7 +11,6 @@ module.exports = {
     './rules/ecmascript6',
     'plugin:prettier/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-  },
+  env: { es6: true, es2017: true },
+  parserOptions: { ecmaVersion: 2017 },
 };

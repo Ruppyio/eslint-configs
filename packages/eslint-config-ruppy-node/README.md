@@ -16,12 +16,15 @@ This eslint configurations has two exported configs.
 ### `ruppy-node`
 
 This is the default configs. This configs is suitable for linting nodeJS project.
-It support for linting ES6+ javascript **with ESModule** (`import`/`export` syntax).
+It support for linting ES2015/ES6 - ESNext javascript syntax **with ESModules**
+(`import`/`export` syntax) with **assumption you have polyfill for ESNext** syntax.
 
 ### `ruppy-node/common`
 
 This configs is suitable for linting nodeJS project.
-It support for linting ES6+ javascript **without ESModule** (`require()` syntax).
+It support for linting ES2015+/ES6+ javascript syntax **without ESModules**
+(`require()` syntax) with assumption you use minimum node version to
+**node LTS (12.18.3 LTS)**.
 
 ## Usage
 
@@ -31,7 +34,9 @@ It support for linting ES6+ javascript **without ESModule** (`require()` syntax)
   npx eslint-ruppy -i
   ```
 
-  **OR** follow along these steps below:
+---
+
+**OR** follow along these steps below:
 
 - Install this configs and its peer dependencies.
 

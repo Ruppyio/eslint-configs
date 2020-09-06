@@ -10,6 +10,11 @@ function getDeprecated(configsFileName) {
   );
   const deprecated = ruleFinder.getDeprecatedRules();
 
+  if (deprecated.length > 0) {
+    // eslint-disable-next-line no-console
+    console.log('Deprecated rules: ', deprecated);
+  }
+
   return deprecated;
 }
 
