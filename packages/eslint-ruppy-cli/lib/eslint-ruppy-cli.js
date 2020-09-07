@@ -14,21 +14,21 @@ async function askQuestions() {
   let value;
   let ts;
 
-  const env = await inquirer.prompt([
+  const projType = await inquirer.prompt([
     {
       type: 'list',
-      name: 'env',
+      name: 'type',
       message: 'What type of project?',
       choices: ['nodeJS', { value: 'react', name: 'reactJS' }, 'vanilla'],
       default: 0,
     },
   ]);
 
-  if (env.env === 'nodeJS') {
+  if (projType.type === 'nodeJS') {
     value = await inquirer.prompt([
       {
         type: 'list',
-        name: 'env',
+        name: 'type',
         message: 'What type of modules?',
         choices: [
           { value: 'esm', name: 'ECMAScript modules' },
@@ -38,14 +38,14 @@ async function askQuestions() {
       },
     ]);
 
-    env.env = value.env;
+    projType.type = value.type;
   }
 
-  if (env.env === 'vanilla') {
+  if (projType.type === 'vanilla') {
     value = await inquirer.prompt([
       {
         type: 'list',
-        name: 'env',
+        name: 'type',
         message: 'What syntax do you write?',
         choices: [
           { value: 'es6', name: 'ES2015+ syntax' },
@@ -55,16 +55,30 @@ async function askQuestions() {
       },
     ]);
 
-    env.env = value.env;
+    projType.type = value.type;
   }
 
-  if (env.env !== 'es5' && env.env !== 'cjs') {
+  const env = await inquirer.prompt([
+    {
+      type: 'checkbox',
+      name: 'env',
+      message:
+        'Select additional environments! (Node env already selected)\nMore: https://eslint.org/docs/user-guide/configuring#specifying-environments',
+      choices: [
+        { name: 'browser', checked: true },
+        { name: 'jest' },
+        { name: 'serviceworker' },
+      ],
+    },
+  ]);
+
+  if (projType.type !== 'es5' && projType.type !== 'cjs') {
     ts = await inquirer.prompt([
       {
         type: 'confirm',
         name: 'typescript',
         message: 'Using typescript?',
-        default: env.env !== 'es6',
+        default: projType.type !== 'es6',
       },
     ]);
   }
@@ -79,7 +93,7 @@ async function askQuestions() {
     },
   ]);
 
-  return { ...env, ...ts, ...manager };
+  return { ...projType, ...env, ...ts, ...manager };
 }
 
 function fetchPeerDependencies(packageName) {
@@ -123,31 +137,35 @@ function eslintConfigs(answer) {
 
   const modules = [];
 
-  if (answer.env === 'es6') {
+  answer.env.forEach((item) => {
+    eslintConfig.env[item] = true;
+  });
+
+  if (answer.type === 'es6') {
     eslintConfig.extends.push('ruppy-base');
     modules.push('eslint-config-ruppy-base');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-base'));
   }
 
-  if (answer.env === 'es5') {
+  if (answer.type === 'es5') {
     eslintConfig.extends.push('ruppy-base/legacy');
     modules.push('eslint-config-ruppy-base');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-base'));
   }
 
-  if (answer.env === 'esm') {
+  if (answer.type === 'esm') {
     eslintConfig.extends.push('ruppy-node');
     modules.push('eslint-config-ruppy-node');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-node'));
   }
 
-  if (answer.env === 'cjs') {
+  if (answer.type === 'cjs') {
     eslintConfig.extends.push('ruppy-node/common');
     modules.push('eslint-config-ruppy-node');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-node'));
   }
 
-  if (answer.env === 'react') {
+  if (answer.type === 'react') {
     eslintConfig.extends.push('ruppy-react');
     modules.push('eslint-config-ruppy-react');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-react'));
@@ -231,7 +249,7 @@ function installPackages(answer, modules) {
 async function eslintRuppyCli() {
   const answer = await askQuestions();
   const { configs, modules } = eslintConfigs(answer);
-  await writeConfigs(configs, answer.env !== 'react' && answer.env !== 'esm');
+  await writeConfigs(configs, answer.type !== 'react' && answer.type !== 'esm');
   installPackages(answer, modules);
 }
 

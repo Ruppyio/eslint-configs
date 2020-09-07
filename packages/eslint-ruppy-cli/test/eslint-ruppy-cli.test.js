@@ -30,15 +30,24 @@ afterAll(() => io.restore());
 describe('eslint-ruppy-cli', () => {
   it('should have expected result', async (done) => {
     const sendKeystrokes = async () => {
-      // env
+      // projType
       io.send(keys.down);
       io.send(keys.up);
       io.send(keys.enter);
       await delay(10);
 
-      // further env
+      // further projType
       io.send(keys.down);
       io.send(keys.up);
+      io.send(keys.enter);
+      await delay(10);
+
+      // env
+      io.send(keys.down);
+      io.send(keys.space);
+      io.send(keys.down);
+      io.send(keys.space);
+      io.send(keys.space);
       io.send(keys.enter);
       await delay(10);
 
@@ -58,7 +67,12 @@ describe('eslint-ruppy-cli', () => {
 
     const result = await askQuestions();
 
-    expect(result).toEqual({ env: 'esm', typescript: true, manager: 'yarn' });
+    expect(result).toEqual({
+      type: 'esm',
+      env: ['browser', 'jest'],
+      typescript: true,
+      manager: 'yarn',
+    });
 
     done();
   });
