@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.2.0...eslint-config-ruppy-react@1.3.0) (2020-09-07)
+
+### Features
+
+- **ruppy-configs:** change default environment settings ([0a974f7](https://github.com/Ruppyio/eslint-configs/commit/0a974f797c0be8457fde330b5eb9737e3d273b6e))
+
 # [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.1.6...eslint-config-ruppy-react@1.2.0) (2020-08-29)
 
 ### Features

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.0.1...eslint-ruppy@1.1.0) (2020-09-07)
+
+### Features
+
+- **ruppy-cli:** ask about additional env ❓ ([300caca](https://github.com/Ruppyio/eslint-configs/commit/300caca43e6a13e5c5b13492ed9a0f678f645cb8))
+- **ruppy-configs:** change default environment settings ([0a974f7](https://github.com/Ruppyio/eslint-configs/commit/0a974f797c0be8457fde330b5eb9737e3d273b6e))
+
 ## [1.0.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.0.0...eslint-ruppy@1.0.1) (2020-08-29)
 
 ### Bug Fixes
