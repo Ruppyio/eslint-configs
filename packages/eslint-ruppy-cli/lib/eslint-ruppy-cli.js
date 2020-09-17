@@ -63,7 +63,7 @@ async function askQuestions() {
       type: 'checkbox',
       name: 'env',
       message:
-        'Select additional environments! (Node env already selected)\nMore: https://eslint.org/docs/user-guide/configuring#specifying-environments',
+        'Select additional environments! (Node env already selected for node based configs)\nMore: https://eslint.org/docs/user-guide/configuring#specifying-environments',
       choices: [
         { name: 'browser', checked: true },
         { name: 'jest' },
@@ -122,19 +122,6 @@ function eslintConfigs(answer) {
     env: {},
   };
 
-  const typescriptConfig = {
-    parserOptions: {
-      parser: '@typescript-eslint/parser',
-      sourceType: 'module',
-    },
-    plugins: ['@typescript-eslint'],
-    settings: { 'import/resolver': { typescript: {} } },
-    rules: {
-      '@typescript-eslint/no-empty-interface': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
-    },
-  };
-
   const modules = [];
 
   answer.env.forEach((item) => {
@@ -166,25 +153,20 @@ function eslintConfigs(answer) {
   }
 
   if (answer.type === 'react') {
-    eslintConfig.extends.push('ruppy-react');
+    eslintConfig.extends.push(
+      answer.typescript ? 'ruppy-react/ts' : 'ruppy-react'
+    );
     modules.push('eslint-config-ruppy-react');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-react'));
   }
 
   if (answer.typescript) {
-    eslintConfig.extends.push('plugin:@typescript-eslint/recommended');
-    modules.push('eslint-import-resolver-typescript');
-    modules.push('@typescript-eslint/eslint-plugin');
-    modules.push('@typescript-eslint/parser');
-    modules.push('typescript');
+    eslintConfig.extends.push('ruppy-ts');
+    modules.push('eslint-config-ruppy-ts');
+    modules.push(...fetchPeerDependencies('eslint-config-ruppy-ts'));
   }
 
-  const configs = {
-    ...eslintConfig,
-    ...(answer.typescript ? typescriptConfig : {}),
-  };
-
-  return { configs, modules };
+  return { configs: eslintConfig, modules };
 }
 
 async function writeConfigs(config, useStrict) {
