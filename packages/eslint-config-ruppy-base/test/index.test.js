@@ -1,71 +1,23 @@
 'use strict';
 
-const { ESLint } = require('eslint');
-const path = require('path');
-const getRuleFinder = require('eslint-find-rules');
-
-function getDeprecated(configsFileName) {
-  const ruleFinder = getRuleFinder(
-    path.resolve(__dirname, '..', configsFileName)
-  );
-  const deprecated = ruleFinder.getDeprecatedRules();
-
-  if (deprecated.length > 0) {
-    // eslint-disable-next-line no-console
-    console.log('Deprecated rules: ', deprecated);
-  }
-
-  return deprecated;
-}
-
-async function getReport(configsFileName, isLegacy = false) {
-  const cli = new ESLint({
-    ignore: false,
-    useEslintrc: false,
-    overrideConfigFile: path.resolve(__dirname, '..', configsFileName),
-    overrideConfig: {
-      env: {
-        browser: true,
-      },
-    },
-  });
-
-  const files = [
-    'packages/eslint-config-ruppy-base/test/mocks/base-test-file.js',
-  ];
-  const legacyFiles = [
-    'packages/eslint-config-ruppy-base/test/mocks/legacy-test-file.js',
-  ];
-
-  const report = await cli.lintFiles(isLegacy ? legacyFiles : files);
-
-  const formatter = await cli.loadFormatter('stylish');
-  const resultText = formatter.format(report);
-
-  if (resultText.match('problems')) {
-    // eslint-disable-next-line no-console
-    console.log(resultText);
-  }
-
-  return resultText;
-}
-
-beforeEach(() => {
-  process.env.ESLINT_CONFIG_PRETTIER_NO_DEPRECATED = 'true';
-});
+const { getDeprecated, getReport } = require('../../../tests/jest.setup');
 
 /**
  * Test Suite for `ruppy-base` configs
  */
 describe('ruppy-base', () => {
   it('should have valid configurations', async () => {
-    const report = await getReport('index.js');
-    const problems = report.match('problems');
-    expect(problems).toEqual(null);
+    const report = await getReport({
+      configPaths: [__dirname, 'mocks', 'index.js'],
+      testPaths: [__dirname, 'mocks', 'base-test-file.js'],
+    });
+
+    expect(report).toBeNull();
   });
 
   it('should not contain deprecated rules', () => {
-    const deprecated = getDeprecated('index.js');
+    const deprecated = getDeprecated(__dirname, '..', 'index.js');
+
     expect(deprecated).toEqual([]);
   });
 });
@@ -75,13 +27,17 @@ describe('ruppy-base', () => {
  */
 describe('ruppy-base/legacy', () => {
   it('should have valid configurations', async () => {
-    const report = await getReport('legacy.js', true);
-    const problems = report.match('problems');
-    expect(problems).toEqual(null);
+    const report = await getReport({
+      configPaths: [__dirname, 'mocks', 'legacy.js'],
+      testPaths: [__dirname, 'mocks', 'legacy-test-file.js'],
+    });
+
+    expect(report).toBeNull();
   });
 
   it('should not contain deprecated rules', () => {
-    const deprecated = getDeprecated('legacy.js');
+    const deprecated = getDeprecated(__dirname, '..', 'legacy.js');
+
     expect(deprecated).toEqual([]);
   });
 });

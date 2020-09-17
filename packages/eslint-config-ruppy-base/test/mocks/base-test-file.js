@@ -1,6 +1,14 @@
-'use strict';
+(function test() {
+  'use strict';
 
-const foo = 'bar';
+  function inner() {
+    let foo = 'bar';
+  
+    foo = 'bazz';
 
-// eslint-disable-next-line no-console
-console.log(foo);
+    // eslint-disable-next-line no-console
+    console.log(foo);
+  }
+
+  inner();
+}());

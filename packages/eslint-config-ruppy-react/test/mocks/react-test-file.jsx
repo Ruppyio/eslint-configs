@@ -2,12 +2,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const ReactTestFile = ({ any }) => {
-  return <div className="test">Hello world! {any}</div>;
+const ReactTestFile = ({ test, test2 }) => {
+  return <div className="test">Hello world! {test} {test2}</div>;
 };
 
 ReactTestFile.propTypes = {
-  any: PropTypes.any,
+  test: PropTypes.string,
+  test2: PropTypes.string.isRequired,
+};
+
+ReactTestFile.defaultProps = {
+  test: 'test',
 };
 
 export default ReactTestFile;
