@@ -19,6 +19,11 @@ deprecated and removed rules. It support for linting ES2015/ES6 - ESNext javascr
 syntax with **assumption you have polyfill for ESNext** syntax.
 It enforce linting for react and JSX.
 
+### `ruppy-react/ts`
+
+This is the extension configs for typescript. This disable some rules not needed for TS (like
+props validation).
+
 ## Usage
 
 - The easiest way to add this configs into project is running this commands in your root project:
