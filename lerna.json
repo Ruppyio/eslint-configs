@@ -4,7 +4,7 @@
   "useWorkspaces": true,
   "command": {
     "create": {
-      "keywords": "eslint, ruppy, config, eslintconfig, eslint-config",
+      "keywords": "eslint, ruppy, config, eslintconfig, eslint-config, prettierconfig, prettier-config",
       "license": "MIT"
     },
     "publish": {
@@ -17,6 +17,6 @@
       "message": "chore(release): publish new release 🚀"
     }
   },
-  "ignoreChanges": ["**/test/**", "**/*.md"],
+  "ignoreChanges": ["**/{test,tests}/**", "**/*.md"],
   "version": "independent"
 }
