@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.3.0...eslint-config-ruppy-react@1.4.0) (2020-09-17)
+
+### Features
+
+- **ruppy-react:** add configs for typescript 💪🏻 ([a27c97d](https://github.com/Ruppyio/eslint-configs/commit/a27c97def4e4a2da734cd0d305de773e4d4ac975))
+
 # [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.2.0...eslint-config-ruppy-react@1.3.0) (2020-09-07)
 
 ### Features
