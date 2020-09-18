@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.4.0...eslint-config-ruppy-react@1.4.1) (2020-09-18)
+
+### Bug Fixes
+
+- **ruppy-react:** add missing bundle in package.json 🙈 ([1584ce3](https://github.com/Ruppyio/eslint-configs/commit/1584ce37a9158f09857a828d819c3236cc849ebc))
+
 # [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.3.0...eslint-config-ruppy-react@1.4.0) (2020-09-17)
 
 ### Features
