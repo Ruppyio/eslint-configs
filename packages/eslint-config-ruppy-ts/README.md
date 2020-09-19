@@ -55,13 +55,13 @@ module.exports = {
 - Install this configs and its peer dependencies.
 
   ```bin
-  yarn add -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier
+  yarn add -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
   ```
 
   or
 
   ```bin
-  npm install -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier
+  npm install -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
   ```
 
 - Create `.eslintrc.js` file in the root project and extends the configs.
@@ -70,9 +70,7 @@ module.exports = {
   ```js
   module.exports = {
     extends: ["ruppy-react/ts, ruppy-ts"],
-    env: {
-      jest: true,
-    },
+    env: {},
   };
   ```
 

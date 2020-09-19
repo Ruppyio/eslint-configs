@@ -54,9 +54,7 @@ props validation).
   ```js
   module.exports = {
     extends: ["ruppy-react"],
-    env: {
-      jest: true,
-    },
+    env: {},
   };
   ```
 

@@ -56,9 +56,7 @@ It support for linting ES2015+/ES6+ javascript syntax **without ESModules**
   ```js
   module.exports = {
     extends: ["ruppy-node"], // or 'ruppy-node/common'
-    env: {
-      jest: true,
-    },
+    env: {},
   };
   ```
 
