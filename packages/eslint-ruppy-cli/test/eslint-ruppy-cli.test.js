@@ -69,7 +69,7 @@ describe('eslint-ruppy-cli', () => {
 
     expect(result).toEqual({
       type: 'esm',
-      env: ['browser', 'jest'],
+      env: ['jest', 'browser'],
       typescript: true,
       manager: 'yarn',
     });

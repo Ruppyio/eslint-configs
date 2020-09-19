@@ -65,8 +65,8 @@ async function askQuestions() {
       message:
         'Select additional environments! (Node env already selected for node based configs)\nMore: https://eslint.org/docs/user-guide/configuring#specifying-environments',
       choices: [
-        { name: 'browser', checked: true },
-        { name: 'jest' },
+        { name: 'jest', checked: true },
+        { name: 'browser' },
         { name: 'serviceworker' },
       ],
     },
@@ -119,14 +119,9 @@ function fetchPeerDependencies(packageName) {
 function eslintConfigs(answer) {
   const eslintConfig = {
     extends: [],
-    env: {},
   };
 
   const modules = [];
-
-  answer.env.forEach((item) => {
-    eslintConfig.env[item] = true;
-  });
 
   if (answer.type === 'es6') {
     eslintConfig.extends.push('ruppy-base');
@@ -165,6 +160,21 @@ function eslintConfigs(answer) {
     modules.push('eslint-config-ruppy-ts');
     modules.push(...fetchPeerDependencies('eslint-config-ruppy-ts'));
   }
+
+  if (answer.env.includes('jest')) {
+    eslintConfig.extends.push('ruppy-jest');
+    modules.push('eslint-config-ruppy-jest');
+    modules.push(...fetchPeerDependencies('eslint-config-ruppy-jest'));
+
+    const jestIndex = answer.env.findIndex((el) => el === 'jest');
+
+    answer.env.splice(jestIndex, 1);
+  }
+
+  answer.env.forEach((item) => {
+    eslintConfig.env = {};
+    eslintConfig.env[item] = true;
+  });
 
   return { configs: eslintConfig, modules };
 }
