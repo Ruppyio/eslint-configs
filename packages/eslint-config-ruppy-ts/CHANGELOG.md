@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.1.0...eslint-config-ruppy-ts@1.2.0) (2020-09-19)
+
+### Features
+
+- **ruppy-ts:** add recommended-requiring-type-checking 💪🏻 ([c077941](https://github.com/Ruppyio/eslint-configs/commit/c077941fb42f244b921d8fbbca8e95a7037592d8))
+
 # [1.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.0.2...eslint-config-ruppy-ts@1.1.0) (2020-09-19)
 
 ### Performance Improvements
