@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.2.0...eslint-config-ruppy-ts@1.2.1) (2020-09-19)
+
+### Bug Fixes
+
+- **ruppy-ts:** disable require-await ([529f9be](https://github.com/Ruppyio/eslint-configs/commit/529f9bee3e44da03673b97d3b1589f2eb9dfb229))
+
 # [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.1.0...eslint-config-ruppy-ts@1.2.0) (2020-09-19)
 
 ### Features
