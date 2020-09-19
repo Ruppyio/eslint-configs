@@ -16,15 +16,10 @@ module.exports = {
 
         // typescript-eslint specific options
         warnOnUnsupportedTypeScriptVersion: true,
-        projectFolderIgnoreList: ['**/node_modules/**'],
-        project: '**/tsconfig.json',
+        project: 'tsconfig.json',
       },
       plugins: ['@typescript-eslint'],
-      settings: {
-        'import/resolver': {
-          typescript: { project: '**/{!(node_modules)/**,**}/tsconfig.json' },
-        },
-      },
+      settings: { 'import/resolver': { typescript: {} } },
       rules: {
         // TypeScript's `noFallthroughCasesInSwitch` option is more robust
         'default-case': 'off',

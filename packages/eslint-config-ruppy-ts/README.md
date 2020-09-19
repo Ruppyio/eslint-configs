@@ -14,6 +14,29 @@ This eslint configurations is the extension of ruppy-configs for typescript proj
 This is the default configs. It contains recommended rules from plugin and the extension rules
 from the plugin, also personal preferences.
 
+**Important**: it needs `tsconfig.json` in your project. The path default to looked up
+in your root project (`process.cwd()`). If you have another location of `tsconfig.json`,
+you should add this settings in your `.eslintrc.js`:
+
+```diff
+module.exports = {
+  extends: ['ruppy-react/ts', 'ruppy-ts'],
+  env: { browser: true, jest: true },
++ parserOptions: {
++   // it accepts string, string[], or glob pattern
++   project: '**/{!(node_modules)/**,**}/tsconfig.json',
++ },
++ settings: {
++   'import/resolver': {
++     typescript: {
++       // it accept string, string[], or glob pattern
++       project: 'path/to/tsconfig.json',
++     },
++   },
++ },
+}
+```
+
 ## Usage
 
 - The easiest way to add this configs into project is running this commands in your root project:
