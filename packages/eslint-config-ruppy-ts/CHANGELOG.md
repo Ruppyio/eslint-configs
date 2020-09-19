@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.0.2...eslint-config-ruppy-ts@1.1.0) (2020-09-19)
+
+### Performance Improvements
+
+- **ruppy-ts:** use static path in root tsconfig ([e91b5cc](https://github.com/Ruppyio/eslint-configs/commit/e91b5cce70542fe86fb68dd2a05ec04522741ee6))
+
 ## [1.0.2](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.0.1...eslint-config-ruppy-ts@1.0.2) (2020-09-18)
 
 ### Bug Fixes

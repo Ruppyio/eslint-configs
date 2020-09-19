@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-jest",
-  "version": "1.0.0-prepublish",
+  "version": "1.0.0",
   "description": "Additional Ruppy's eslint configs for jest environment 🃏",
   "keywords": [
     "eslint",

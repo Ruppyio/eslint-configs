@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.2.0...eslint-ruppy@1.3.0) (2020-09-19)
+
+### Features
+
+- **ruppy-cli:** use ruppy-jest for jest environment 🃏 ([a83b8ea](https://github.com/Ruppyio/eslint-configs/commit/a83b8ea52d7b316604fbce67495de6664a5c73df))
+- **ruppy-jest:** initial release ruppy-jest 🃏🚀 ([c7629a8](https://github.com/Ruppyio/eslint-configs/commit/c7629a8c1662cae8fb2fcb2dc8b27e482f9d66c6))
+
 # [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.1.0...eslint-ruppy@1.2.0) (2020-09-17)
 
 ### Features
