@@ -74,6 +74,9 @@ module.exports = {
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
 
+    'require-await': 'off',
+    '@typescript-eslint/require-await': 'off',
+
     'no-return-await': 'off',
     '@typescript-eslint/return-await': 'error',
   },
