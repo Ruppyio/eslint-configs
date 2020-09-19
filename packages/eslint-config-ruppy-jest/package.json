@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-ruppy-jest",
+  "version": "1.0.0-prepublish",
+  "description": "Additional Ruppy's eslint configs for jest environment 🃏",
+  "keywords": [
+    "eslint",
+    "ruppy",
+    "config",
+    "eslintconfig",
+    "eslint-config",
+    "prettierconfig",
+    "prettier-config"
+  ],
+  "author": "Ruppy.io (https://ruppy.io)",
+  "contributors": [
+    "Latipun <latifsulistyo.me@gmail.com> (https://ruppy.io)"
+  ],
+  "homepage": "https://github.com/Ruppyio/eslint-configs/tree/master/packages/eslint-config-ruppy-jest#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "rules/",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruppyio/eslint-configs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ruppyio/eslint-configs/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-plugin-jest": "^24.0.1"
+  }
+}

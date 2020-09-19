@@ -4,5 +4,5 @@
 
 describe('the cli', () => {
   // const { argv } = cli();
-  test.todo('needs tests');
+  it.todo('needs tests');
 });

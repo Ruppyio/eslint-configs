@@ -28,7 +28,7 @@ beforeAll(() => {
 afterAll(() => io.restore());
 
 describe('eslint-ruppy-cli', () => {
-  it('should have expected result', async (done) => {
+  it('should have expected result', async () => {
     const sendKeystrokes = async () => {
       // projType
       io.send(keys.down);
@@ -63,7 +63,7 @@ describe('eslint-ruppy-cli', () => {
     };
 
     // fire-off keystrokes after 5ms so the prompt showup first
-    setTimeout(() => sendKeystrokes(), 5);
+    setTimeout(async () => sendKeystrokes(), 5);
 
     const result = await askQuestions();
 
@@ -73,7 +73,5 @@ describe('eslint-ruppy-cli', () => {
       typescript: true,
       manager: 'yarn',
     });
-
-    done();
   });
 });
