@@ -100,10 +100,10 @@ module.exports = {
 
     // Prevent JSX prop spreading
     'react/jsx-props-no-spreading': [
-      'warn',
+      'off',
       {
         html: 'enforce',
-        custom: 'enforce',
+        custom: 'ignore',
         explicitSpread: 'ignore',
         exceptions: [],
       },
