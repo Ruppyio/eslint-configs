@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-react",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Ruppy's eslint configs for React.js projects ⚛🐤",
   "keywords": [
     "eslint",

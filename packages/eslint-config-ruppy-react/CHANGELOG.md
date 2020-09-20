@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.4.1...eslint-config-ruppy-react@1.5.0) (2020-09-20)
+
+### Features
+
+- **ruppy-react:** allow jsx props spreading 🤷🏻‍♀️ ([1abdf5a](https://github.com/Ruppyio/eslint-configs/commit/1abdf5ad49ece7c6c74b4b09c5c974e79d195fde))
+
 ## [1.4.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.4.0...eslint-config-ruppy-react@1.4.1) (2020-09-18)
 
 ### Bug Fixes
