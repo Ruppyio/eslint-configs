@@ -18,7 +18,15 @@ module.exports = {
     'class-methods-use-this': [
       'error',
       {
-        exceptMethods: [],
+        exceptMethods: [
+          // discord-akairo abstract methods
+          'exec',
+          'clear',
+          'delete',
+          'get',
+          'init',
+          'set',
+        ],
       },
     ],
 
