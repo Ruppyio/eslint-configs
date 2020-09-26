@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.3.0...eslint-config-ruppy-base@1.4.0) (2020-09-26)
+
+### Features
+
+- **ruppy-base:** allow akairo abstract methods without `this` ([73ca24c](https://github.com/Ruppyio/eslint-configs/commit/73ca24cab27b8f955251994c25f9bb2d50a200e6))
+
 # [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.2.0...eslint-config-ruppy-base@1.3.0) (2020-09-07)
 
 ### Features
