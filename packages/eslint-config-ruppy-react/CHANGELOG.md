@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.5.1...eslint-config-ruppy-react@1.6.0) (2020-11-02)
+
+### Features
+
+- upgrade deps ([9621ac3](https://github.com/Ruppyio/eslint-configs/commit/9621ac3f3b7788e508a98e595088882f006341af))
+
 ## [1.5.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.5.0...eslint-config-ruppy-react@1.5.1) (2020-09-26)
 
 **Note:** Version bump only for package eslint-config-ruppy-react

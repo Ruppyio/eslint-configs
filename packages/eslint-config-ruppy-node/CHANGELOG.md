@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.3.1...eslint-config-ruppy-node@1.4.0) (2020-11-02)
+
+### Features
+
+- **ruppy-node:** add \*.d.ts to allowed devDeps import ([7dbf6c6](https://github.com/Ruppyio/eslint-configs/commit/7dbf6c676f1c0931291adfcb1d476be84461c8b7))
+
 ## [1.3.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.3.0...eslint-config-ruppy-node@1.3.1) (2020-09-26)
 
 **Note:** Version bump only for package eslint-config-ruppy-node
