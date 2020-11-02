@@ -41,7 +41,6 @@ module.exports = {
           '**/protractor.conf.*.js',
           '**/*.conf.{js,ts}',
           '**/*.config.{js,ts}',
-          '**/*.d.ts',
         ],
         optionalDependencies: false,
       },
