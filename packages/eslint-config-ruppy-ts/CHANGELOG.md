@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.3.0...eslint-config-ruppy-ts@1.4.0) (2020-11-02)
+
+### Features
+
+- **ruppy-ts:** disable some rules on declaration files ([52a562d](https://github.com/Ruppyio/eslint-configs/commit/52a562d1da2775d01ea005ceee874015dc476c9c))
+
 # [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.2.1...eslint-config-ruppy-ts@1.3.0) (2020-11-02)
 
 ### Features
