@@ -5,8 +5,8 @@
  */
 module.exports = {
   rules: {
-    // Enforce emojis are wrapped in `<span>` and provide screenreader access.
-    'jsx-a11y/accessible-emoji': 'error',
+    // [Deprecated] Enforce emojis are wrapped in `<span>` and provide screenreader access.
+    // 'jsx-a11y/accessible-emoji': 'error',
 
     // Enforce all elements that require alternative text have meaningful information to relay back to end user.
     'jsx-a11y/alt-text': 'error',
