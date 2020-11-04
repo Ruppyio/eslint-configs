@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.4.0...eslint-config-ruppy-ts@1.4.1) (2020-11-04)
+
+### Bug Fixes
+
+- **ruppy-ts:** resolve d.ts override not picking up ([2ba3623](https://github.com/Ruppyio/eslint-configs/commit/2ba36238e56f88f65129e140e06680f64558f453))
+
 # [1.4.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.3.0...eslint-config-ruppy-ts@1.4.0) (2020-11-02)
 
 ### Features
