@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.6.1...eslint-config-ruppy-react@1.7.0) (2020-11-04)
+
+### Features
+
+- **ruppy-react:** nextJS & react 17 allow no React in jsx scope ([3848f1d](https://github.com/Ruppyio/eslint-configs/commit/3848f1d576dc296a93fcd3f817058e4e269e939a))
+
 ## [1.6.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.6.0...eslint-config-ruppy-react@1.6.1) (2020-11-02)
 
 **Note:** Version bump only for package eslint-config-ruppy-react
