@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.7.0...eslint-config-ruppy-react@1.7.1) (2020-11-08)
+
+### Bug Fixes
+
+- **ruppy-react:** resolve component ordering of `handle` ([c83f00a](https://github.com/Ruppyio/eslint-configs/commit/c83f00a9abd057bab603342caa358cbaee13de9b))
+
 # [1.7.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.6.1...eslint-config-ruppy-react@1.7.0) (2020-11-04)
 
 ### Features
