@@ -157,6 +157,7 @@ module.exports = {
           'static-methods',
           'instance-variables',
           'lifecycle',
+          '/^handle.+$/',
           '/^on.+$/',
           'getters',
           'setters',
