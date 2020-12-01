@@ -1,7 +1,7 @@
 # `eslint-ruppy-cli` 👩🏻‍💻👨🏻‍💻
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Ruppyio/eslint-configs/blob/main/CONTRIBUTING.md)
-[![Discord](https://img.shields.io/discord/340308951826694157?style=flat-square&logo=discord&label=chat+and+discuss)](https://discord.gg/Zw8d3wy "Emperor Ruppy's Kingdom")
+[![Discord](https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square)](https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia")
 
 > Ruppy's eslint configs bootstrapper for your projects
 
