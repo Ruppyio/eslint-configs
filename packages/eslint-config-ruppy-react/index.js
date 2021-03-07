@@ -12,7 +12,6 @@ module.exports = {
     './rules/react-hooks',
     './rules/jsx-a11y',
     'ruppy-node',
-    'prettier/react',
   ],
   env: { browser: true },
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
