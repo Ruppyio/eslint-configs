@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.5.0...eslint-config-ruppy-base@1.6.0) (2021-03-08)
+
+
+### Features
+
+* update prettier-config and some deps ([#219](https://github.com/Ruppyio/eslint-configs/issues/219)) ([874bf27](https://github.com/Ruppyio/eslint-configs/commit/874bf278e81d2193aa11e0545ceaca59df6a29a0))
+
+
+
+
+
 # [1.5.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@1.4.0...eslint-config-ruppy-base@1.5.0) (2020-11-02)
 
 ### Features
