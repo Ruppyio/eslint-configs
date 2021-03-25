@@ -1,0 +1,57 @@
+# https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# Workflows commands (::set-output, etc): # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
+
+name: CI ⚙🤖
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  test_on_node:
+    name: Test ⚙🛠
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [15.x, 12.x]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.4
+
+      - name: Use NodeJS ${{ matrix.node }} 📦
+        uses: actions/setup-node@v2.1.5
+        with:
+          node: ${{ matrix.node }}
+
+      - name: Get Yarn Cache Directory Path 🐈
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache Directories 🧶
+        uses: actions/cache@v2.1.4
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ${{ github.workspace }}/node_modules/.cache
+          key: ${{ runner.os }}-${{ matrix.node }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node }}-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies ✨
+        run: yarn install --frozen-lockfile --check-files
+
+      - name: Run Linter 👨🏻‍💻
+        run: yarn lint
+
+      - name: Run Formatter 💅
+        run: yarn format
+
+      - name: Run Test 🛠
+        run: yarn test

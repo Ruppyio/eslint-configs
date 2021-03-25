@@ -15,7 +15,7 @@ module.exports = {
     '!**/vendor/**',
     '!**/dist/**',
   ],
-  setupFilesAfterEnv: ['<rootDir>/tests/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/test/jest.setup.js'],
   errorOnDeprecated: true,
   testEnvironment: 'node',
   verbose: true,

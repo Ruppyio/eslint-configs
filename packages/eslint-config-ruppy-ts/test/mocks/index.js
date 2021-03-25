@@ -2,11 +2,11 @@ module.exports = {
   extends: ['../..'],
   plugins: ['import'],
   parserOptions: {
-    project: 'packages/eslint-config-ruppy-ts/tests/mocks/tsconfig.json',
+    project: 'packages/eslint-config-ruppy-ts/test/mocks/tsconfig.json',
   },
   settings: {
     'import/resolver': {
-      typescript: { project: 'packages/eslint-config-ruppy-ts/tests/mocks/tsconfig.json' },
+      typescript: { project: 'packages/eslint-config-ruppy-ts/test/mocks/tsconfig.json' },
     },
   },
   rules: {

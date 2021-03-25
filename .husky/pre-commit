@@ -1,1 +1,5 @@
-lint-staged
+#!/bin/sh
+# shellcheck disable=SC1090
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
