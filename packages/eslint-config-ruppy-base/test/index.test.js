@@ -1,6 +1,6 @@
 'use strict';
 
-const { getDeprecated, getReport } = require('../../../tests/jest.setup');
+const { getDeprecated, getReport } = require('../../../test/jest.setup');
 
 /**
  * Test Suite for `ruppy-base` configs
