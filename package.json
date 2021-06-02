@@ -12,7 +12,7 @@
     "format": "prettier --check .",
     "test": "jest",
     "postinstall": "husky install",
-    "preversion": "yarn test:all"
+    "preversion": "yarn lint && yarn format && yarn test"
   },
   "keywords": [
     "eslint",

@@ -26,5 +26,11 @@ module.exports = {
         objectLiteralTypeAssertions: 'allow-as-parameter',
       },
     ],
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      {
+        checksVoidReturn: false,
+      },
+    ],
   },
 };
