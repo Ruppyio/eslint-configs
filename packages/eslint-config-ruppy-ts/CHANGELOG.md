@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.5.0...eslint-config-ruppy-ts@1.6.0) (2021-06-02)
+
+### Features
+
+- **ts:** don't check misused-promises on void return ([792c612](https://github.com/Ruppyio/eslint-configs/commit/792c6122666546c3d02773c5e465d3d8ec19f7c3))
+
 # [1.5.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-ts@1.4.1...eslint-config-ruppy-ts@1.5.0) (2021-03-08)
 
 ### Features
