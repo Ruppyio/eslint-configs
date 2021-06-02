@@ -8,10 +8,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "lerna:publish": "yarn bootstrap && lerna publish",
-    "lint": "eslint --fix --color --cache .",
-    "format": "prettier --write .",
+    "lint": "eslint .",
+    "format": "prettier --check .",
     "test": "jest",
-    "test:all": "yarn lint && yarn format && yarn test",
     "postinstall": "husky install",
     "preversion": "yarn test:all"
   },
@@ -31,32 +30,32 @@
   "bugs": "https://github.com/Ruppyio/eslint-configs/issues",
   "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
-    "eslint": "^7.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
     "eslint-find-rules": "^3.6.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.3",
     "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
     "mock-stdin": "^1.0.0",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.3.2"
   },
   "lint-staged": {
-    "*.{json,md,yml,yaml}": "prettier --write",
-    "*.js": [
-      "eslint --cache --fix",
+    "**/*.js": [
+      "eslint --fix",
       "prettier --write"
-    ]
+    ],
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
