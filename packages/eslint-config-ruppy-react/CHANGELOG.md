@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.8.1...eslint-config-ruppy-react@1.8.2) (2021-06-13)
+
+**Note:** Version bump only for package eslint-config-ruppy-react
+
 ## [1.8.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@1.8.0...eslint-config-ruppy-react@1.8.1) (2021-06-02)
 
 **Note:** Version bump only for package eslint-config-ruppy-react
