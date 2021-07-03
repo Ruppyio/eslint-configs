@@ -15,6 +15,6 @@ module.exports = {
     'ruppy-base',
   ],
   env: { node: true, es2020: true, es2021: true },
-  parserOptions: { ecmaVersion: 2021, sourceType: 'module' },
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['import', 'node'],
 };
