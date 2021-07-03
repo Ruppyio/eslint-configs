@@ -3,6 +3,6 @@
 module.exports = {
   extends: ['../..'],
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 'latest',
   }
 };
