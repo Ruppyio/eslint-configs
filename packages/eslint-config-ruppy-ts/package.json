@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ruppy-ts",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Additional Ruppy's eslint configs for Typescript projects 💪🏻",
   "keywords": [
     "eslint",
