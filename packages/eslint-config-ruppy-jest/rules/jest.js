@@ -6,7 +6,18 @@
 module.exports = {
   rules: {
     // recommended
-    'jest/expect-expect': 'warn',
+    'jest/expect-expect': [
+      'warn',
+      {
+        assertFunctionNames: [
+          'expect',
+          'expect.**',
+          'request.**.expect',
+          'assert',
+          'assert.**',
+        ],
+      },
+    ],
     'jest/no-commented-out-tests': 'warn',
     'jest/no-conditional-expect': 'error',
     'jest/no-deprecated-functions': 'error',
