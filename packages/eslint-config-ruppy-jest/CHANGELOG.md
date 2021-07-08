@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-jest@1.1.0...eslint-config-ruppy-jest@1.2.0) (2021-07-08)
+
+### Features
+
+- **ruppy-jest:** add another expect / assert function ([4e4d56e](https://github.com/Ruppyio/eslint-configs/commit/4e4d56e10b2f04c31525866fbbbd1e3998fcc9be))
+
 # [1.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-jest@1.0.0...eslint-config-ruppy-jest@1.1.0) (2021-07-03)
 
 ### Features
