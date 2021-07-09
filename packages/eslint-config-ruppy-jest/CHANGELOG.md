@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-jest@1.2.0...eslint-config-ruppy-jest@1.3.0) (2021-07-09)
+
+### Features
+
+- **ruppy-jest:** add `yeoman-test` expect/assertion ([0eee142](https://github.com/Ruppyio/eslint-configs/commit/0eee1422540bbe63b0ed751cba186611d595d9b3))
+
 # [1.2.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-jest@1.1.0...eslint-config-ruppy-jest@1.2.0) (2021-07-08)
 
 ### Features
