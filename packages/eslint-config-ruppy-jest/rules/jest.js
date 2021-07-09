@@ -15,6 +15,7 @@ module.exports = {
           'request.**.expect',
           'assert',
           'assert.**',
+          '**.assert*',
         ],
       },
     ],
