@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.4.1...eslint-ruppy@1.5.0) (2021-07-22)
+
+### Features
+
+- **ruppy-cli:** add option for yarn workspaces support ([#321](https://github.com/Ruppyio/eslint-configs/issues/321)) ([c44e586](https://github.com/Ruppyio/eslint-configs/commit/c44e5862d6b52c1ef9777654c1b80eac08d63160))
+
 ## [1.4.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@1.4.0...eslint-ruppy@1.4.1) (2021-06-02)
 
 **Note:** Version bump only for package eslint-ruppy
