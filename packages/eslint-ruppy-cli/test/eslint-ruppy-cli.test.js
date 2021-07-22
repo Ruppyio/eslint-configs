@@ -60,6 +60,10 @@ describe('eslint-ruppy-cli', () => {
       io.send(keys.up);
       io.send(keys.enter);
       await delay(10);
+
+      // Workspace
+      io.send(keys.enter);
+      await delay(10);
     };
 
     // fire-off keystrokes after 5ms so the prompt showup first
@@ -72,6 +76,7 @@ describe('eslint-ruppy-cli', () => {
       env: ['jest', 'browser'],
       typescript: true,
       manager: 'yarn',
+      isWorkspace: false,
     });
   });
 });
