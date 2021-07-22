@@ -94,7 +94,7 @@ async function askQuestions() {
     },
   ]);
 
-  if (manager.type === 'yarn') {
+  if (manager.manager === 'yarn') {
     isWorkspace = await inquirer.prompt([
       {
         type: 'confirm',
