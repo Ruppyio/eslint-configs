@@ -13,6 +13,7 @@ const {
 async function askQuestions() {
   let value;
   let ts;
+  let isWorkspace;
 
   const projType = await inquirer.prompt([
     {
@@ -93,7 +94,18 @@ async function askQuestions() {
     },
   ]);
 
-  return { ...projType, ...env, ...ts, ...manager };
+  if (manager.manager === 'yarn') {
+    isWorkspace = await inquirer.prompt([
+      {
+        type: 'confirm',
+        name: 'isWorkspace',
+        message: 'Is a workspace?',
+        default: false,
+      },
+    ]);
+  }
+
+  return { ...projType, ...env, ...ts, ...manager, ...isWorkspace };
 }
 
 function fetchPeerDependencies(packageName) {
@@ -213,14 +225,17 @@ async function writeConfigs(config, useStrict) {
 
 function installPackages(answer, modules) {
   let npmProcess;
-  const { manager } = answer;
+  const { manager, isWorkspace } = answer;
 
   if (manager === 'npm') {
     npmProcess = spawn.sync('npm', ['i', '--save-dev'].concat(modules), {
       stdio: 'inherit',
     });
   } else {
-    npmProcess = spawn.sync(manager, ['add', '-D'].concat(modules), {
+    const options = ['add', '-D'];
+    if (isWorkspace) options.push('-W');
+
+    npmProcess = spawn.sync(manager, options.concat(modules), {
       stdio: 'inherit',
     });
   }
