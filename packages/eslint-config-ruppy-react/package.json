@@ -47,6 +47,10 @@
     "eslint-config-ruppy-base": "^1.6.1",
     "eslint-config-ruppy-node": "^1.7.0"
   },
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1"
+  },
   "peerDependencies": {
     "eslint": "^7.30.0",
     "eslint-plugin-import": "^2.22.0",
