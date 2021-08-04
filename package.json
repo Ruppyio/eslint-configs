@@ -6,13 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces",
-    "lerna:publish": "yarn bootstrap && lerna publish",
     "lint": "eslint .",
     "format": "prettier --check .",
     "test": "jest",
-    "prepare": "husky install",
-    "preversion": "yarn lint && yarn format && yarn test"
+    "postinstall": "husky install"
   },
   "keywords": [
     "eslint",
@@ -21,9 +18,8 @@
     "eslintconfig",
     "eslint-config"
   ],
-  "author": "Ruppy.io (https://ruppy.io)",
   "contributors": [
-    "Latipun <latifsulistyo.me@gmail.com> (https://ruppy.io)"
+    "Latipun <latifsulistyo.me@gmail.com> (https://latipun7.github.io)"
   ],
   "license": "MIT",
   "repository": "https://github.com/Ruppyio/eslint-configs.git",
@@ -43,14 +39,11 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "lerna": "^4.0.0",
     "lint-staged": "^11.1.1",
-    "mock-stdin": "^1.0.0",
     "prettier": "^2.3.2",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
     "typescript": "^4.3.5"
   },
+  "packageManager": "yarn@3.0.0",
   "lint-staged": {
     "**/*.js": [
       "eslint --fix",

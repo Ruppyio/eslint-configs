@@ -17,9 +17,7 @@
   "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
   "license": "MIT",
   "main": "lib/eslint-ruppy-cli.js",
-  "bin": {
-    "eslint-ruppy": "bin/eslint-ruppy"
-  },
+  "bin": "bin/eslint-ruppy",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -43,5 +41,8 @@
     "inquirer": "^8.1.0",
     "prettier": "^2.3.0",
     "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "mock-stdin": "^1.0.0"
   }
 }
