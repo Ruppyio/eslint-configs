@@ -83,26 +83,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 - **configs:** upgrade to eslint 7 ✨ ([d4257dc](https://github.com/Ruppyio/eslint-configs/commit/d4257dccaca3ba704dfaa1614ab3d485b8837882))
 
-## 0.5.1 (2020-06-09)
-
-# 0.5.0 (2020-06-09)
-
-## 0.4.2 (2020-06-08)
-
-## 0.4.1 (2020-06-08)
-
-# 0.4.0 (2020-06-08)
-
-# 0.3.0 (2020-05-10)
-
-# 0.2.0 (2020-05-09)
-
-# 0.1.0 (2020-05-06)
-
-### Features
-
-- **ruppy-base:** add initial base configs 🐣 ([9fbd909](https://github.com/Ruppyio/eslint-configs/commit/9fbd909e46acfdac6b20ec849bf855085eac8d49))
-
 # [1.0.0](https://github.com/Ruppyio/eslint-configs/compare/v0.6.2...v1.0.0) (2020-06-29)
 
 ### Bug Fixes
