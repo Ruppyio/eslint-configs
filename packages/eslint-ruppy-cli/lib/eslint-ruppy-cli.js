@@ -95,14 +95,21 @@ async function askQuestions() {
   ]);
 
   if (manager.manager === 'yarn') {
-    isWorkspace = await inquirer.prompt([
-      {
-        type: 'confirm',
-        name: 'isWorkspace',
-        message: 'Is a workspace?',
-        default: false,
-      },
-    ]);
+    const npmProcess = spawn.sync('yarn', ['config', 'get', 'rcFilename'], {
+      encoding: 'utf8',
+    });
+    const notYarnBerry = !npmProcess.stdout;
+
+    if (notYarnBerry) {
+      isWorkspace = await inquirer.prompt([
+        {
+          type: 'confirm',
+          name: 'isWorkspace',
+          message: 'Is a workspace?',
+          default: false,
+        },
+      ]);
+    }
   }
 
   return { ...projType, ...env, ...ts, ...manager, ...isWorkspace };
