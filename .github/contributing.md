@@ -39,7 +39,7 @@ help it make it even better than today. We welcome you [with arms wide open~! ðŸ
 3. Install dependencies using `yarn`.
 
    ```bin
-   yarn install --check-files
+   yarn
    ```
 
 4. Run the test.
@@ -78,4 +78,4 @@ help it make it even better than today. We welcome you [with arms wide open~! ðŸ
 
 ## Commit Message Guidelines
 
-We follow Angular's commit message guidelines for most convention to [generate the changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular#readme).
+We follow [Conventional Commits](http://conventionalcommits.org/) guidelines.
