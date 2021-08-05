@@ -1,7 +1,10 @@
 'use strict';
 
+const { sync: readPackageSync } = require('read-pkg');
+
 module.exports = {
   extends: ['semantic-release-monorepo'],
+  tagFormat: `${readPackageSync().name}@<%= version %>`,
   branches: [
     '+([0-9])?(.{+([0-9]),x}).x',
     'main',
