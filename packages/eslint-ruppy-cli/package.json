@@ -31,6 +31,7 @@
     "url": "git+https://github.com/Ruppyio/eslint-configs.git"
   },
   "scripts": {
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
