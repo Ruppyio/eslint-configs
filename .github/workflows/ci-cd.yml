@@ -37,7 +37,7 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies ✨
-        run: yarn --immutable --immutable-cache --check-cache
+        run: yarn --immutable --check-cache
 
       - name: Run Linter 👨🏻‍💻
         run: yarn lint
