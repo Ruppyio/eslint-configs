@@ -5,10 +5,10 @@ name: Continuous Integration and Continuous Delivery ⚙🚀
 
 on:
   push:
-    branches: [main]
+    branches: [main, "**.x", next, beta, alpha]
 
   pull_request:
-    branches: [main]
+    types: [opened, synchronize, reopened]
 
 jobs:
   test_on_node:
@@ -47,3 +47,30 @@ jobs:
 
       - name: Run Test 🛠
         run: yarn test
+
+  release:
+    name: Release ✨🚀
+    runs-on: ubuntu-latest
+    needs: test_on_node
+    if: github.event_name == 'push'
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - name: Use NodeJS LTS 📦
+        uses: actions/setup-node@v2.3.2
+        with:
+          node-version: "lts/*"
+          cache: yarn
+
+      - name: Install Dependencies ✨
+        run: yarn --immutable --check-cache
+
+      - name: Release 🚀
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn release
