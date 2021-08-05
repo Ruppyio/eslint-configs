@@ -1,5 +1,7 @@
 'use strict';
 
+require('./packages/eslint-config-ruppy-node/patch');
+
 module.exports = {
   extends: [
     './packages/eslint-config-ruppy-node/common',
