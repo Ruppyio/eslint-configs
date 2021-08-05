@@ -191,15 +191,19 @@ function eslintConfigs(answer) {
   return { configs: eslintConfig, modules };
 }
 
-async function writeConfigs(config, useStrict) {
+async function writeConfigs(config, useStrict, patchPath) {
   const ignoreFile = join(__dirname, 'configs', 'ignore-file');
   const prettierConfig = join(__dirname, 'configs', 'prettierrc');
   const configString = JSON.stringify(config);
   const jsStrict = useStrict ? "'use strict';\n\n" : '';
-  const jsString = format(`${jsStrict}module.exports = ${configString};\n`, {
-    singleQuote: true,
-    parser: 'babel',
-  });
+  const patchString = `require('${patchPath}/patch');\n\n`;
+  const jsString = format(
+    `${jsStrict}${patchString}module.exports = ${configString};\n`,
+    {
+      singleQuote: true,
+      parser: 'babel',
+    }
+  );
 
   try {
     await Promise.all([
@@ -246,17 +250,30 @@ function installPackages(answer, modules) {
     const pluralS = modules.length > 1 ? 's' : '';
 
     console.error(
-      `Could not execute npm. Please install the following package${pluralS} with a package manager of your choice: ${modules.join(
+      `Could not execute ${manager}. Please install the following package${pluralS} with a package manager of your choice: ${modules.join(
         ', '
       )}`
     );
   }
 }
 
+async function getPatchPath() {
+  const answer = await askQuestions();
+
+  if (answer.type === 'react') return 'eslint-config-ruppy-react';
+
+  if (answer.type === 'esm' || answer.type === 'cjs')
+    return 'eslint-config-ruppy-node';
+
+  return 'eslint-config-ruppy-base';
+}
+
 async function eslintRuppyCli() {
   const answer = await askQuestions();
+  const useStrict = answer.type !== 'react' && answer.type !== 'esm';
+  const patchPath = getPatchPath();
   const { configs, modules } = eslintConfigs(answer);
-  await writeConfigs(configs, answer.type !== 'react' && answer.type !== 'esm');
+  await writeConfigs(configs, useStrict, patchPath);
   installPackages(answer, modules);
 }
 

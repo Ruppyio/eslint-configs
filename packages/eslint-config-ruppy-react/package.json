@@ -45,21 +45,18 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-ruppy-base": "^1.6.1",
-    "eslint-config-ruppy-node": "^1.7.0"
+    "eslint-config-ruppy-base": "workspace:*",
+    "eslint-config-ruppy-node": "workspace:*",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1"
   },
   "peerDependencies": {
-    "eslint": "^7.30.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0",
-    "prettier": "^2.1.1"
+    "eslint": "7.x",
+    "prettier": "2.x"
   }
 }
