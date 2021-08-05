@@ -1,7 +1,8 @@
 # `eslint-config-ruppy-ts` 💪🏻
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Ruppyio/eslint-configs/blob/main/CONTRIBUTING.md)
-[![Discord](https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square)](https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia")
+[![Discord][discord-image]][discord-url]
+[![GitHub Workflow Status][workflow-image]][workflow-url]
+[![NPM Package][npm-image]][npm-url]
 
 > Ruppy's eslint extension configs for Typescript projects
 
@@ -49,25 +50,27 @@ module.exports = {
 
 **OR** follow along these steps below:
 
-- This configs use need another config. This config only extension.
+- This configs **needs another config**. This config only extension.
   Example use along with ruppy-react:
 
 - Install this configs and its peer dependencies.
 
   ```bin
-  yarn add -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
+  yarn add -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint prettier typescript
   ```
 
   or
 
   ```bin
-  npm install -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint eslint-plugin-import eslint-plugin-node eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-prettier prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
+  npm install -D eslint-config-ruppy-react eslint-config-ruppy-ts eslint prettier typescript
   ```
 
 - Create `.eslintrc.js` file in the root project and extends the configs.
   Also set the environment your project would live on.
 
   ```js
+  require("eslint-config-ruppy-react/patch");
+
   module.exports = {
     extends: ["ruppy-react/ts, ruppy-ts"],
     env: {},
@@ -99,6 +102,12 @@ module.exports = {
 
 <!-- Variables -->
 
+[discord-image]: https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square
+[discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
+[workflow-image]: https://img.shields.io/github/workflow/status/Ruppyio/eslint-configs/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
+[workflow-url]: https://github.com/Ruppyio/eslint-configs/actions "GitHub Actions"
+[npm-image]: https://img.shields.io/npm/v/eslint-config-ruppy-ts?label=package&logo=npm&style=flat-square
+[npm-url]: https://npmjs.org/package/eslint-config-ruppy-ts "eslint-config-ruppy-ts on NPM"
 [airbnb]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide"
 [eslint-rules]: https://eslint.org/docs/rules/ "ESLint Rules"
 [eslint-env]: https://eslint.org/docs/user-guide/configuring#specifying-environments "ESLint Environments"

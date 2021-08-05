@@ -1,7 +1,8 @@
 # `eslint-config-ruppy-base` 🐣
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Ruppyio/eslint-configs/blob/main/CONTRIBUTING.md)
-[![Discord](https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square)](https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia")
+[![Discord][discord-image]][discord-url]
+[![GitHub Workflow Status][workflow-image]][workflow-url]
+[![NPM Package][npm-image]][npm-url]
 
 > Ruppy's base eslint configurations
 
@@ -38,19 +39,21 @@ This configs support for linting legacy javascript language (ES5 and below).
 - Install this configs and its peer dependencies.
 
   ```bin
-  yarn add -D eslint-config-ruppy-base eslint eslint-plugin-prettier prettier
+  yarn add -D eslint-config-ruppy-base eslint prettier
   ```
 
   or
 
   ```bin
-  npm install -D eslint-config-ruppy-base eslint eslint-plugin-prettier prettier
+  npm install -D eslint-config-ruppy-base eslint prettier
   ```
 
 - Create `.eslintrc.js` file in the root project and extends this configs.
   Also set the environment your project would live on.
 
   ```js
+  require("eslint-config-ruppy-base/patch");
+
   module.exports = {
     extends: ["ruppy-base"], // or 'ruppy-base/legacy' for ES5 and below
     env: {
@@ -85,6 +88,12 @@ This configs support for linting legacy javascript language (ES5 and below).
 
 <!-- Variables -->
 
+[discord-image]: https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square
+[discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
+[workflow-image]: https://img.shields.io/github/workflow/status/Ruppyio/eslint-configs/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
+[workflow-url]: https://github.com/Ruppyio/eslint-configs/actions "GitHub Actions"
+[npm-image]: https://img.shields.io/npm/v/eslint-config-ruppy-base?label=package&logo=npm&style=flat-square
+[npm-url]: https://npmjs.org/package/eslint-config-ruppy-base "eslint-config-ruppy-base on NPM"
 [airbnb]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide"
 [eslint-rules]: https://eslint.org/docs/rules/ "ESLint Rules"
 [eslint-env]: https://eslint.org/docs/user-guide/configuring#specifying-environments "ESLint Environments"

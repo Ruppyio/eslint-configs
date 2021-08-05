@@ -2,7 +2,6 @@
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
-[![NPM Package][npm-image]][npm-url]
 
 > Bootstrap Ruppy's eslint configs + prettier into the project 🚀
 
@@ -35,5 +34,3 @@ MIT © Ruppy.io
 [discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
 [workflow-image]: https://img.shields.io/github/workflow/status/Ruppyio/eslint-configs/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
 [workflow-url]: https://github.com/Ruppyio/eslint-configs/actions "GitHub Actions"
-[npm-image]: https://img.shields.io/npm/v/generator-latipun?label=package&logo=npm&style=flat-square
-[npm-url]: https://npmjs.org/package/generator-latipun "generator-latipun on NPM"
