@@ -1,7 +1,7 @@
 # https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 # Workflows commands (::set-output, etc): # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
 
-name: CI ⚙🤖
+name: Continuous Integration and Continuous Delivery ⚙🚀
 
 on:
   push:
@@ -31,27 +31,13 @@ jobs:
         uses: actions/checkout@v2.3.4
 
       - name: Use NodeJS ${{ matrix.node }} 📦
-        uses: actions/setup-node@v2.2.0
+        uses: actions/setup-node@v2.3.2
         with:
           node-version: ${{ matrix.node }}
-
-      - name: Get Yarn Cache Directory Path 🐈
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache Directories 🧶
-        uses: actions/cache@v2.1.6
-        with:
-          path: |
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-            ${{ github.workspace }}/node_modules/.cache
-          key: ${{ runner.os }}-${{ matrix.node }}-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ matrix.node }}-
-            ${{ runner.os }}-
+          cache: yarn
 
       - name: Install Dependencies ✨
-        run: yarn install --frozen-lockfile --check-files
+        run: yarn --immutable --immutable-cache --check-cache
 
       - name: Run Linter 👨🏻‍💻
         run: yarn lint
