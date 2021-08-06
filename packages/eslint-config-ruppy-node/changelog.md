@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [eslint-config-ruppy-node-v2.0.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@2.0.0...eslint-config-ruppy-node@2.0.1) (2021-08-06)
+
+### 🐛 Fixes
+
+- resolve `workspace:*` dependencies ([dd87a57](https://github.com/Ruppyio/eslint-configs/commit/dd87a57a9f4de9dff86fcb555dd33805ac1c7153)), closes [pmowrer/semantic-release-monorepo#107](https://github.com/pmowrer/semantic-release-monorepo/issues/107)
+
 ## [eslint-config-ruppy-node-v2.0.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@1.7.0...eslint-config-ruppy-node@2.0.0) (2021-08-05)
 
 ### ⚠ BREAKING CHANGES
