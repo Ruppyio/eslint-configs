@@ -3122,7 +3122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-ruppy-base@workspace:*, eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base":
+"eslint-config-ruppy-base@^2.0.0, eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base":
   version: 0.0.0-use.local
   resolution: "eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base"
   dependencies:
@@ -3146,11 +3146,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-ruppy-node@workspace:*, eslint-config-ruppy-node@workspace:packages/eslint-config-ruppy-node":
+"eslint-config-ruppy-node@^2.0.0, eslint-config-ruppy-node@workspace:packages/eslint-config-ruppy-node":
   version: 0.0.0-use.local
   resolution: "eslint-config-ruppy-node@workspace:packages/eslint-config-ruppy-node"
   dependencies:
-    eslint-config-ruppy-base: "workspace:*"
+    eslint-config-ruppy-base: ^2.0.0
     eslint-plugin-import: ^2.23.4
     eslint-plugin-node: ^11.1.0
   peerDependencies:
@@ -3163,8 +3163,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-ruppy-react@workspace:packages/eslint-config-ruppy-react"
   dependencies:
-    eslint-config-ruppy-base: "workspace:*"
-    eslint-config-ruppy-node: "workspace:*"
+    eslint-config-ruppy-node: ^2.0.0
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.24.0
     eslint-plugin-react-hooks: ^4.2.0

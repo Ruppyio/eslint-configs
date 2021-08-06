@@ -42,7 +42,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-ruppy-base": "workspace:*",
+    "eslint-config-ruppy-base": "^2.0.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0"
   },
