@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [eslint-config-ruppy-node-v2.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@2.0.1...eslint-config-ruppy-node@2.1.0) (2021-08-07)
+
+### ✨ Features
+
+- support `cjs` and `mjs` files ([623fba1](https://github.com/Ruppyio/eslint-configs/commit/623fba1a0094317c2cfb018dfbc7e3619da47b77))
+
 ## [eslint-config-ruppy-node-v2.0.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@2.0.0...eslint-config-ruppy-node@2.0.1) (2021-08-06)
 
 ### 🐛 Fixes
