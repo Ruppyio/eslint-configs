@@ -14,6 +14,7 @@ async function askQuestions() {
   let value;
   let ts;
   let isWorkspace;
+  let patchPath;
 
   const projType = await inquirer.prompt([
     {
@@ -112,7 +113,15 @@ async function askQuestions() {
     }
   }
 
-  return { ...projType, ...env, ...ts, ...manager, ...isWorkspace };
+  if (projType.type === 'react') {
+    patchPath = 'eslint-config-ruppy-react';
+  } else if (projType.type === 'esm' || projType.type === 'cjs') {
+    patchPath = 'eslint-config-ruppy-node';
+  } else {
+    patchPath = 'eslint-config-ruppy-base';
+  }
+
+  return { ...projType, ...env, ...ts, ...manager, ...isWorkspace, patchPath };
 }
 
 function fetchPeerDependencies(packageName) {
@@ -264,22 +273,12 @@ function installPackages(answer, modules) {
   }
 }
 
-async function getPatchPath() {
-  const answer = await askQuestions();
-
-  if (answer.type === 'react') return 'eslint-config-ruppy-react';
-
-  if (answer.type === 'esm' || answer.type === 'cjs')
-    return 'eslint-config-ruppy-node';
-
-  return 'eslint-config-ruppy-base';
-}
-
 async function eslintRuppyCli() {
   const answer = await askQuestions();
   const useStrict = answer.type !== 'react' && answer.type !== 'esm';
-  const patchPath = await getPatchPath();
+  const { patchPath } = answer;
   const { configs, modules } = eslintConfigs(answer);
+
   await writeConfigs(configs, useStrict, patchPath);
   installPackages(answer, modules);
 }

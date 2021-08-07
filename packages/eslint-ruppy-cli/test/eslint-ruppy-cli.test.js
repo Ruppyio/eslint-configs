@@ -72,6 +72,7 @@ describe('eslint-ruppy-cli', () => {
       env: ['jest', 'browser'],
       typescript: true,
       manager: 'yarn',
+      patchPath: 'eslint-config-ruppy-node',
     });
   });
 });
