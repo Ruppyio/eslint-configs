@@ -22,7 +22,8 @@
   "files": [
     "rules/",
     "index.js",
-    "legacy.js"
+    "legacy.js",
+    "patch.js"
   ],
   "repository": {
     "type": "git",

@@ -28,7 +28,8 @@
   "files": [
     "rules/",
     "common.js",
-    "index.js"
+    "index.js",
+    "patch.js"
   ],
   "repository": {
     "type": "git",
