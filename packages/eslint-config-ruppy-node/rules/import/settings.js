@@ -7,9 +7,9 @@ module.exports = {
   settings: {
     'import/extensions': [
       '.js',
+      '.cjs',
       '.mjs',
       '.jsx',
-      '.cjs',
       '.ts',
       '.d.ts',
       '.tsx',
@@ -25,9 +25,9 @@ module.exports = {
       node: {
         extensions: [
           '.js',
+          '.cjs',
           '.mjs',
           '.jsx',
-          '.cjs',
           '.ts',
           '.d.ts',
           '.tsx',
