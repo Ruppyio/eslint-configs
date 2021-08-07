@@ -278,7 +278,7 @@ async function getPatchPath() {
 async function eslintRuppyCli() {
   const answer = await askQuestions();
   const useStrict = answer.type !== 'react' && answer.type !== 'esm';
-  const patchPath = getPatchPath();
+  const patchPath = await getPatchPath();
   const { configs, modules } = eslintConfigs(answer);
   await writeConfigs(configs, useStrict, patchPath);
   installPackages(answer, modules);
