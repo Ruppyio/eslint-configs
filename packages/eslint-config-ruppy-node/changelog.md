@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [eslint-config-ruppy-node-v2.1.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@2.1.0...eslint-config-ruppy-node@2.1.1) (2021-08-07)
+
+### 🐛 Fixes
+
+- include missing patch file 🤦‍♂️ ([a2a1b5c](https://github.com/Ruppyio/eslint-configs/commit/a2a1b5c2030524cbd855abfc1e6eb8465b78feb0))
+
 ## [eslint-config-ruppy-node-v2.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-node@2.0.1...eslint-config-ruppy-node@2.1.0) (2021-08-07)
 
 ### ✨ Features
