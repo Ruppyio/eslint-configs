@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [eslint-ruppy-v2.1.1](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@2.1.0...eslint-ruppy@2.1.1) (2021-08-07)
+
+### 🐛 Fixes
+
+- **ruppy-cli:** no more prompts asked twice 😳 ([d249e12](https://github.com/Ruppyio/eslint-configs/commit/d249e1263283a24c9b405eb6e5d3beae1065675b))
+
 ## [eslint-ruppy-v2.1.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-ruppy@2.0.0...eslint-ruppy@2.1.0) (2021-08-07)
 
 ### ✨ Features
