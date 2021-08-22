@@ -40,7 +40,7 @@
     "@rushstack/eslint-patch": "^1.0.6",
     "confusing-browser-globals": "^1.0.10",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0"
+    "eslint-plugin-prettier": "^3.4.1"
   },
   "peerDependencies": {
     "eslint": "7.x",
