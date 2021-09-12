@@ -3205,7 +3205,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-ruppy-base@^2.0.0, eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base":
+"eslint-config-ruppy-base@^3.0.0, eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base":
   version: 0.0.0-use.local
   resolution: "eslint-config-ruppy-base@workspace:packages/eslint-config-ruppy-base"
   dependencies:
@@ -3233,7 +3233,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-ruppy-node@workspace:packages/eslint-config-ruppy-node"
   dependencies:
-    eslint-config-ruppy-base: ^2.0.0
+    eslint-config-ruppy-base: ^3.0.0
     eslint-plugin-import: ^2.24.2
     eslint-plugin-node: ^11.1.0
   peerDependencies:
