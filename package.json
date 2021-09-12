@@ -27,18 +27,15 @@
   "bugs": "https://github.com/Ruppyio/eslint-configs/issues",
   "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.1",
+    "@latipun7/releaserc": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.30.0",
-    "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
     "eslint-find-rules": "^3.6.1",
     "husky": "^7.0.2",
     "jest": "^27.1.1",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
-    "read-pkg": "^5.2.0",
     "semantic-release": "^17.4.7",
     "semantic-release-monorepo": "^7.0.5",
     "typescript": "^4.4.3"
@@ -50,5 +47,11 @@
       "prettier --write"
     ],
     "**/*": "prettier --write --ignore-unknown"
+  },
+  "release": {
+    "extends": [
+      "semantic-release-monorepo",
+      "@latipun7/releaserc/monorepo"
+    ]
   }
 }
