@@ -1,6 +1,23 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
+
+## [eslint-config-ruppy-base-v3.0.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-base@2.0.1...eslint-config-ruppy-base@3.0.0) (2021-09-12)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** `eslint-plugin-prettier` drops support for old versions of ESLint, Prettier and Node.
+  You must use at least ESLint v7.28.0, Prettier v2.0.0 and Node v12.0.0.
+  Aside from that, usage of this config remains identical.
+
+### 🏗️ Builds System
+
+- **deps:** upgrade `eslint-plugin-prettier` to v4 [`2541c33`](https://github.com/Ruppyio/eslint-configs/commit/2541c33dbf50fd9f8769fcc6217fa4bde0a6b4e9).
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
