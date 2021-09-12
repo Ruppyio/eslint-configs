@@ -1,6 +1,23 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
+
+## [eslint-config-ruppy-react-v3.0.0](https://github.com/Ruppyio/eslint-configs/compare/eslint-config-ruppy-react@2.0.2...eslint-config-ruppy-react@3.0.0) (2021-09-12)
+
+### ⚠ BREAKING CHANGES
+
+- **deps:** `eslint-plugin-prettier` drops support for old versions of ESLint, Prettier and Node.
+  You must use at least ESLint v7.28.0, Prettier v2.0.0 and Node v12.0.0.
+  Aside from that, usage of this config remains identical.
+
+### 🏗️ Builds System
+
+- **deps:** upgrade `eslint-config-ruppy-node` to v3 [`054c75c`](https://github.com/Ruppyio/eslint-configs/commit/054c75cae779dd732ffc2f67662f06eb33645d88).
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
