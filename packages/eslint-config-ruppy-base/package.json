@@ -37,7 +37,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.0.6",
+    "@rushstack/eslint-patch": "^1.0.7",
     "confusing-browser-globals": "^1.0.10",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0"
