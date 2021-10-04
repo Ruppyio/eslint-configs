@@ -32,7 +32,7 @@
     "eslint-find-rules": "^3.6.1",
     "husky": "^7.0.2",
     "jest": "^27.2.4",
-    "lint-staged": "^11.1.2",
+    "lint-staged": "^11.2.0",
     "prettier": "^2.4.1",
     "semantic-release": "^18.0.0",
     "semantic-release-monorepo": "^7.0.5",
