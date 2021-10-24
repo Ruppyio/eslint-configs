@@ -713,18 +713,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@latipun7/releaserc@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@latipun7/releaserc@npm:1.0.0"
+"@latipun7/releaserc@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@latipun7/releaserc@npm:2.1.0"
   dependencies:
-    "@semantic-release/changelog": ^5.0.1
-    "@semantic-release/git": ^9.0.0
-    conventional-changelog-conventionalcommits: ^4.6.0
+    "@semantic-release/changelog": ^6.0.0
+    "@semantic-release/git": ^10.0.0
+    conventional-changelog-conventionalcommits: ^4.6.1
     read-pkg: ^5.2.0
   peerDependencies:
     semantic-release: "*"
     semantic-release-monorepo: "*"
-  checksum: cf825228815aaaff70a0d34e176ef41785a096251b74a54eaa4c21defd72e1095630096058e2017666af1c07f8256d0c737fa790ee06f7cc874b4f2a7dff8cb5
+  checksum: 23079e96ee87fc937cef039e7608c434a27a138645850c5ccaf394dc11b69d2e778a2b80eefdd901b51002ad668a9b350e4a04a208c2294262247ab9a47969f3
   languageName: node
   linkType: hard
 
@@ -1070,17 +1070,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/changelog@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@semantic-release/changelog@npm:5.0.1"
+"@semantic-release/changelog@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@semantic-release/changelog@npm:6.0.0"
   dependencies:
     "@semantic-release/error": ^2.1.0
     aggregate-error: ^3.0.0
     fs-extra: ^9.0.0
     lodash: ^4.17.4
   peerDependencies:
-    semantic-release: ">=15.8.0 <18.0.0"
-  checksum: 71212ce237261d4bf58556367af0d0c1302055d2c99bb4f1fea1b1c304ba6b077a7232dd7d4a978b8361154ce33d2cb0165830a9336826ce4022ef0753166da4
+    semantic-release: ">=18.0.0"
+  checksum: b3a942132dd6109e98ec537e8253728570fe02227573a3ba6d50263ea9b41127dc7e28271e744c03dfec2f0c7f4a79eebb606dadc5f16bb1f6ef62ffb8e07bcf
   languageName: node
   linkType: hard
 
@@ -1115,9 +1115,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:^9.0.0":
-  version: 9.0.1
-  resolution: "@semantic-release/git@npm:9.0.1"
+"@semantic-release/git@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "@semantic-release/git@npm:10.0.0"
   dependencies:
     "@semantic-release/error": ^2.1.0
     aggregate-error: ^3.0.0
@@ -1128,8 +1128,8 @@ __metadata:
     micromatch: ^4.0.0
     p-reduce: ^2.0.0
   peerDependencies:
-    semantic-release: ">=16.0.0 <18.0.0"
-  checksum: 00045da5b48ff09b4a3045c93f07c4bf7e7fb8355d9d4e306862a2a9a4233f728901e4949fac5fa7bed868e18931f8d5bbeae1dfc4cc298a20191789a8c70907
+    semantic-release: ">=18.0.0"
+  checksum: 1d3710d0bb258e49719966e202a3b44f00a234491848ed5ce3999ee3e0cabd08e4ec2e9ab8ec5acd63acebf66ef9a44fed37512db5fcd97dac04c5a331aeeb2d
   languageName: node
   linkType: hard
 
@@ -2671,7 +2671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.6.0":
+"conventional-changelog-conventionalcommits@npm:^4.6.1":
   version: 4.6.1
   resolution: "conventional-changelog-conventionalcommits@npm:4.6.1"
   dependencies:
@@ -3389,7 +3389,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-configs@workspace:."
   dependencies:
-    "@latipun7/releaserc": ^1.0.0
+    "@latipun7/releaserc": ^2.1.0
     eslint: ^7.32.0
     eslint-find-rules: ^3.6.1
     husky: ^7.0.2
