@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Ruppyio/eslint-configs#readme",
   "devDependencies": {
     "@latipun7/releaserc": "^2.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.2.0",
     "eslint-find-rules": "^3.6.1",
     "husky": "^7.0.2",
     "jest": "^27.2.5",

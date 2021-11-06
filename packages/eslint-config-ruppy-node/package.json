@@ -48,7 +48,7 @@
     "eslint-plugin-node": "^11.1.0"
   },
   "peerDependencies": {
-    "eslint": "7.x",
+    "eslint": "8.x",
     "prettier": "2.x"
   }
 }
