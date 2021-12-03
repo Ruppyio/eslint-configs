@@ -34,7 +34,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^24.5.0"
+    "eslint-plugin-jest": "^24.7.0"
   },
   "peerDependencies": {
     "eslint": "7.x"
