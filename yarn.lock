@@ -713,9 +713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@latipun7/releaserc@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@latipun7/releaserc@npm:2.1.1"
+"@latipun7/releaserc@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "@latipun7/releaserc@npm:2.1.3"
   dependencies:
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
@@ -727,7 +727,7 @@ __metadata:
   peerDependenciesMeta:
     semantic-release-monorepo:
       optional: true
-  checksum: e47d42da0d72bc79a5d9caed32a89c5164c4d37aa7fa7a08b99fd11c60d822c08882f1e5d4b73dd57292ba700bd7f29f34fdb810161a0c42375e8371d4349cf8
+  checksum: 48bf79858d589850937eb2f688f9a7bfd1b77726550ff070d950b2192bd6ee2e371aa1e85f6a90f08c5bd9184624e1ede486f21b925ad5dd48099af4e1f4c1ad
   languageName: node
   linkType: hard
 
@@ -3392,7 +3392,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-configs@workspace:."
   dependencies:
-    "@latipun7/releaserc": ^2.1.1
+    "@latipun7/releaserc": ^2.1.3
     eslint: ^7.32.0
     eslint-find-rules: ^3.6.1
     husky: ^7.0.4
