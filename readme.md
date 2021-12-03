@@ -3,6 +3,8 @@
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
 
+**Deprecated**: This project is unmaintained. See: [@latipun7/eslint-configs](https://npm.im/@latipun7/eslint-config)
+
 > Bootstrap Ruppy's eslint configs + prettier into the project 🚀
 
 ## Contributing
